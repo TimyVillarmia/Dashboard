@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Finals.UserControls
 {
-    public partial class SignInForm : UserControl
+    public partial class Mode : UserControl
     {
-        public SignInForm()
+        public Mode()
         {
             InitializeComponent();
         }
-
-     
-     
-        private void recoverLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            forgotPass.Visible = true;
-            SignInPanel.Visible = false;
-        }
-
-      
     }
 }
