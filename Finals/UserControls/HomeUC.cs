@@ -25,8 +25,22 @@ namespace Finals.UserControls
         public HomeUC()
         {
             InitializeComponent();
+
         }
 
+ 
 
+        private void BtnSIgnIn_Click_1(object sender, EventArgs e)
+        {
+            if (!HomePanel.Controls.Contains(UserControls.Mode.Instance))
+            {
+                HomePanel.Controls.Add(UserControls.Mode.Instance);
+                UserControls.Mode.Instance.Dock = DockStyle.Fill;
+                UserControls.Mode.Instance.BringToFront();
+            }
+            else
+                UserControls.HomeUC.Instance.BringToFront();
+
+        }
     }
 }

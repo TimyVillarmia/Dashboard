@@ -12,12 +12,18 @@ namespace Finals
 {
     public partial class MainForm : Form
     {
+
+
         public MainForm()
         {
             InitializeComponent();
 
             this.BtnHome.FillColor = Color.FromArgb(255, 110, 108);
             this.BtnHome.ForeColor = Color.White;
+
+            MainPanel.Controls.Add(UserControls.HomeUC.Instance);
+            UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
+            UserControls.HomeUC.Instance.BringToFront();
         }
 
         private void BtnHome_Click(object sender, EventArgs e)
@@ -38,7 +44,6 @@ namespace Finals
             }
             else
                 UserControls.HomeUC.Instance.BringToFront();
-
 
         }
 
@@ -79,6 +84,8 @@ namespace Finals
             else
                 UserControls.ProductUC.Instance.BringToFront();
         }
+
+    
     }
 }
 
