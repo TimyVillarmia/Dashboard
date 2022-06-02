@@ -73,16 +73,6 @@ namespace Finals.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap casual_life_3d_young_man_using_laptop_and_talking_on_the_phone {
-            get {
-                object obj = ResourceManager.GetObject("casual-life-3d-young-man-using-laptop-and-talking-on-the-phone", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap headline {
             get {
                 object obj = ResourceManager.GetObject("headline", resourceCulture);

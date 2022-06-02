@@ -61,17 +61,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ForgotPass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\HomeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\HomeUC.Designer.cs">
       <DependentUpon>HomeUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Mode.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Mode.Designer.cs">
-      <DependentUpon>Mode.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ProductUC.cs">
       <SubType>UserControl</SubType>
@@ -79,17 +79,17 @@
     <Compile Include="UserControls\ProductUC.Designer.cs">
       <DependentUpon>ProductUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SignInUC.cs">
+    <Compile Include="UserControls\SignIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SignInUC.Designer.cs">
-      <DependentUpon>SignInUC.cs</DependentUpon>
+    <Compile Include="UserControls\SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SignUpUC.cs">
+    <Compile Include="UserControls\SignUp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SignUpUC.Designer.cs">
-      <DependentUpon>SignUpUC.cs</DependentUpon>
+    <Compile Include="UserControls\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\TeamUC.cs">
       <SubType>UserControl</SubType>
@@ -110,20 +110,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mode.resx">
-      <DependentUpon>Mode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProductUC.resx">
       <DependentUpon>ProductUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SignInUC.resx">
-      <DependentUpon>SignInUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SignUpUC.resx">
-      <DependentUpon>SignUpUC.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TeamUC.resx">
       <DependentUpon>TeamUC.cs</DependentUpon>
@@ -151,8 +148,6 @@
   <ItemGroup>
     <None Include="Resources\headline.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\casual-life-3d-young-man-using-laptop-and-talking-on-the-phone.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
