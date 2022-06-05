@@ -30,14 +30,16 @@
         {
             this.PanelSignUp = new Guna.UI2.WinForms.Guna2Panel();
             this.SignInPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lblAlt = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtConfirmPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.linkSignIn = new System.Windows.Forms.LinkLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblAlt = new System.Windows.Forms.Label();
+            this.togglePass = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelSignUp.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +55,8 @@
             // SignInPanel
             // 
             this.SignInPanel.BorderRadius = 18;
+            this.SignInPanel.Controls.Add(this.txtUsername);
+            this.SignInPanel.Controls.Add(this.togglePass);
             this.SignInPanel.Controls.Add(this.lblAlt);
             this.SignInPanel.Controls.Add(this.label1);
             this.SignInPanel.Controls.Add(this.checkBox1);
@@ -65,6 +69,38 @@
             this.SignInPanel.Name = "SignInPanel";
             this.SignInPanel.Size = new System.Drawing.Size(414, 550);
             this.SignInPanel.TabIndex = 3;
+            // 
+            // lblAlt
+            // 
+            this.lblAlt.BackColor = System.Drawing.Color.Transparent;
+            this.lblAlt.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lblAlt.ForeColor = System.Drawing.Color.Gray;
+            this.lblAlt.Location = new System.Drawing.Point(36, 71);
+            this.lblAlt.Name = "lblAlt";
+            this.lblAlt.Size = new System.Drawing.Size(343, 58);
+            this.lblAlt.TabIndex = 14;
+            this.lblAlt.Text = "Please fill up the neccessary information to create your account";
+            this.lblAlt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto Black", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(41, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(329, 46);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Create an account";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(49, 386);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(222, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "I agree to all the Term, and Privacy Policy";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // txtConfirmPass
             // 
@@ -89,6 +125,7 @@
             this.txtConfirmPass.SelectedText = "";
             this.txtConfirmPass.Size = new System.Drawing.Size(343, 49);
             this.txtConfirmPass.TabIndex = 9;
+            this.txtConfirmPass.TextChanged += new System.EventHandler(this.txtConfirmPass_TextChanged);
             // 
             // txtEmail
             // 
@@ -105,7 +142,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Roboto", 14F);
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(40, 211);
+            this.txtEmail.Location = new System.Drawing.Point(40, 152);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -113,6 +150,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(343, 49);
             this.txtEmail.TabIndex = 1;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // linkSignIn
             // 
@@ -146,10 +184,11 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '•';
-            this.txtPassword.PlaceholderText = "Create Username";
+            this.txtPassword.PlaceholderText = "Create Password";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(343, 49);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnSignUp
             // 
@@ -166,38 +205,49 @@
             this.btnSignUp.Size = new System.Drawing.Size(343, 50);
             this.btnSignUp.TabIndex = 7;
             this.btnSignUp.Text = "Create account";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
-            // checkBox1
+            // togglePass
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(49, 386);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(222, 17);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "I agree to all the Term, and Privacy Policy";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.togglePass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.togglePass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.togglePass.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.togglePass.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.togglePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.togglePass.Location = new System.Drawing.Point(335, 285);
+            this.togglePass.Name = "togglePass";
+            this.togglePass.Size = new System.Drawing.Size(35, 20);
+            this.togglePass.TabIndex = 10;
+            this.togglePass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.togglePass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.togglePass.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.togglePass.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.togglePass.CheckedChanged += new System.EventHandler(this.togglePass_CheckedChanged);
             // 
-            // label1
+            // txtUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Black", 28F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(41, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 46);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Create an account";
-            // 
-            // lblAlt
-            // 
-            this.lblAlt.BackColor = System.Drawing.Color.Transparent;
-            this.lblAlt.Font = new System.Drawing.Font("Roboto", 12F);
-            this.lblAlt.ForeColor = System.Drawing.Color.Gray;
-            this.lblAlt.Location = new System.Drawing.Point(36, 143);
-            this.lblAlt.Name = "lblAlt";
-            this.lblAlt.Size = new System.Drawing.Size(343, 58);
-            this.lblAlt.TabIndex = 14;
-            this.lblAlt.Text = "Please fill up the neccessary information to create your account";
-            this.lblAlt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsername.BorderColor = System.Drawing.Color.Black;
+            this.txtUsername.BorderRadius = 12;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Roboto", 14F);
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(40, 211);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderText = "Create Username";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(343, 49);
+            this.txtUsername.TabIndex = 15;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // SignUpUC
             // 
@@ -226,5 +276,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblAlt;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch togglePass;
+        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
     }
 }
