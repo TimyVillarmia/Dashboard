@@ -31,6 +31,7 @@ namespace Finals.UserControls
 
         private void linkSignIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+        
             UserControls.SignUpUC.Instance.SendToBack();
 
         }

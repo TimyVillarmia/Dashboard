@@ -130,4 +130,7 @@
   <data name="casual-life-3d-young-man-using-laptop-and-talking-on-the-phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casual-life-3d-young-man-using-laptop-and-talking-on-the-phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="casual-life-3d-young-woman-in-headphones-sitting-in-front-of-laptop-and-waving" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casual-life-3d-young-woman-in-headphones-sitting-in-front-of-laptop-and-waving.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

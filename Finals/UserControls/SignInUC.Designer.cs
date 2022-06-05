@@ -33,11 +33,11 @@
             this.linkSignUp = new System.Windows.Forms.LinkLabel();
             this.lblHello = new System.Windows.Forms.Label();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
-            this.picHello = new Guna.UI2.WinForms.Guna2PictureBox();
             this.linkForgotPass = new System.Windows.Forms.LinkLabel();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblAlt = new System.Windows.Forms.Label();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.picHello = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PanelSignIn.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHello)).BeginInit();
@@ -72,7 +72,7 @@
             this.linkSignUp.AutoSize = true;
             this.linkSignUp.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkSignUp.LinkColor = System.Drawing.Color.Black;
-            this.linkSignUp.Location = new System.Drawing.Point(85, 464);
+            this.linkSignUp.Location = new System.Drawing.Point(85, 468);
             this.linkSignUp.Name = "linkSignUp";
             this.linkSignUp.Size = new System.Drawing.Size(258, 19);
             this.linkSignUp.TabIndex = 8;
@@ -106,18 +106,6 @@
             this.btnSignIn.Size = new System.Drawing.Size(343, 50);
             this.btnSignIn.TabIndex = 7;
             this.btnSignIn.Text = "Sign In";
-            // 
-            // picHello
-            // 
-            this.picHello.FillColor = System.Drawing.Color.Transparent;
-            this.picHello.Image = global::Finals.Properties.Resources.casual_life_3d_young_man_using_laptop_and_talking_on_the_phone;
-            this.picHello.ImageRotate = 0F;
-            this.picHello.Location = new System.Drawing.Point(180, 17);
-            this.picHello.Name = "picHello";
-            this.picHello.Size = new System.Drawing.Size(231, 192);
-            this.picHello.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHello.TabIndex = 3;
-            this.picHello.TabStop = false;
             // 
             // linkForgotPass
             // 
@@ -191,6 +179,18 @@
             this.txtPassword.Size = new System.Drawing.Size(343, 49);
             this.txtPassword.TabIndex = 2;
             // 
+            // picHello
+            // 
+            this.picHello.FillColor = System.Drawing.Color.Transparent;
+            this.picHello.Image = global::Finals.Properties.Resources.casual_life_3d_young_man_using_laptop_and_talking_on_the_phone;
+            this.picHello.ImageRotate = 0F;
+            this.picHello.Location = new System.Drawing.Point(180, 17);
+            this.picHello.Name = "picHello";
+            this.picHello.Size = new System.Drawing.Size(231, 192);
+            this.picHello.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHello.TabIndex = 3;
+            this.picHello.TabStop = false;
+            // 
             // SignInUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,7 +211,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel PanelSignIn;
-        private System.Windows.Forms.LinkLabel linkSignUp;
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
         private System.Windows.Forms.LinkLabel linkForgotPass;
         private System.Windows.Forms.Label lblAlt;
@@ -220,5 +219,6 @@
         private System.Windows.Forms.Label lblHello;
         private Guna.UI2.WinForms.Guna2PictureBox picHello;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel SignInPanel;
+        private System.Windows.Forms.LinkLabel linkSignUp;
     }
 }

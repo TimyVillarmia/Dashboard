@@ -37,7 +37,7 @@ namespace Finals.UserControls
 
             if (!HomePanel.Controls.Contains(UserControls.SignInUC.Instance))
             {
-                HomePanel.Controls.Add(UserControls.SignInUC.Instance);
+                Controls.Add(UserControls.SignInUC.Instance);
                 UserControls.SignInUC.Instance.BringToFront();
             }
             else
@@ -48,7 +48,7 @@ namespace Finals.UserControls
         {
             if (!HomePanel.Controls.Contains(UserControls.SignUpUC.Instance))
             {
-                HomePanel.Controls.Add(UserControls.SignUpUC.Instance);
+                Controls.Add(UserControls.SignUpUC.Instance);
                 UserControls.SignUpUC.Instance.BringToFront();
             }
             else

@@ -35,6 +35,9 @@
             this.linkSignIn = new System.Windows.Forms.LinkLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblAlt = new System.Windows.Forms.Label();
             this.PanelSignUp.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +53,9 @@
             // SignInPanel
             // 
             this.SignInPanel.BorderRadius = 18;
+            this.SignInPanel.Controls.Add(this.lblAlt);
+            this.SignInPanel.Controls.Add(this.label1);
+            this.SignInPanel.Controls.Add(this.checkBox1);
             this.SignInPanel.Controls.Add(this.txtConfirmPass);
             this.SignInPanel.Controls.Add(this.txtEmail);
             this.SignInPanel.Controls.Add(this.linkSignIn);
@@ -113,7 +119,7 @@
             this.linkSignIn.AutoSize = true;
             this.linkSignIn.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkSignIn.LinkColor = System.Drawing.Color.Black;
-            this.linkSignIn.Location = new System.Drawing.Point(89, 464);
+            this.linkSignIn.Location = new System.Drawing.Point(89, 468);
             this.linkSignIn.Name = "linkSignIn";
             this.linkSignIn.Size = new System.Drawing.Size(244, 19);
             this.linkSignIn.TabIndex = 8;
@@ -159,7 +165,39 @@
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(343, 50);
             this.btnSignUp.TabIndex = 7;
-            this.btnSignUp.Text = "Sign Up";
+            this.btnSignUp.Text = "Create account";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(49, 386);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(222, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "I agree to all the Term, and Privacy Policy";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto Black", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(41, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(329, 46);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Create an account";
+            // 
+            // lblAlt
+            // 
+            this.lblAlt.BackColor = System.Drawing.Color.Transparent;
+            this.lblAlt.Font = new System.Drawing.Font("Roboto", 12F);
+            this.lblAlt.ForeColor = System.Drawing.Color.Gray;
+            this.lblAlt.Location = new System.Drawing.Point(36, 143);
+            this.lblAlt.Name = "lblAlt";
+            this.lblAlt.Size = new System.Drawing.Size(343, 58);
+            this.lblAlt.TabIndex = 14;
+            this.lblAlt.Text = "Please fill up the neccessary information to create your account";
+            this.lblAlt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SignUpUC
             // 
@@ -185,5 +223,8 @@
         private System.Windows.Forms.LinkLabel linkSignIn;
         private Guna.UI2.WinForms.Guna2TextBox txtConfirmPass;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel SignInPanel;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblAlt;
     }
 }

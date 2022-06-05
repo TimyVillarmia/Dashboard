@@ -154,5 +154,8 @@
   <ItemGroup>
     <None Include="Resources\casual-life-3d-young-man-using-laptop-and-talking-on-the-phone.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual-life-3d-young-woman-in-headphones-sitting-in-front-of-laptop-and-waving.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

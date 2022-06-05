@@ -30,23 +30,25 @@ namespace Finals.UserControls
 
         private void SignInUC_Load(object sender, EventArgs e)
         {
-
+            
         }
 
 
 
         private void linkSignUp_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (!PanelSignIn.Controls.Contains(UserControls.SignUpUC.Instance))
-            {
-                PanelSignIn.Controls.Add(UserControls.SignUpUC.Instance);
-                UserControls.SignUpUC.Instance.BringToFront();
-            }
-            else
-                UserControls.SignUpUC.Instance.BringToFront();
+            UserControls.SignInUC.Instance.SendToBack();
+
+            //if (!PanelSignIn.Controls.Contains(UserControls.SignInUC.Instance))
+            //{
+            //    Controls.Add(UserControls.SignUpUC.Instance);
+            //    UserControls.SignUpUC.Instance.BringToFront();
+            //}
+            //else
+            //    UserControls.SignUpUC.Instance.BringToFront();
         }
 
 
-        
+
     }
 }
