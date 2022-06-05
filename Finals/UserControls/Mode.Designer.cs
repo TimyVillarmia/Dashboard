@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.HomePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
+            // 
+            // HomePanel
+            // 
+            this.HomePanel.Location = new System.Drawing.Point(0, 0);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(1000, 700);
+            this.HomePanel.TabIndex = 0;
             // 
             // Mode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.HomePanel);
             this.Name = "Mode";
             this.Size = new System.Drawing.Size(1000, 700);
             this.ResumeLayout(false);
@@ -42,5 +51,7 @@
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel HomePanel;
     }
 }

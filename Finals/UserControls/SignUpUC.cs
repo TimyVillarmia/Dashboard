@@ -10,25 +10,29 @@ using System.Windows.Forms;
 
 namespace Finals.UserControls
 {
-    public partial class Mode : UserControl
+    public partial class SignUpUC : UserControl
     {
-        private static Mode _instance;
-        public static Mode Instance
+
+        private static SignUpUC _instance;
+        public static SignUpUC Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new Mode();
+                    _instance = new SignUpUC();
                 return _instance;
             }
         }
-        public Mode()
+        public SignUpUC()
         {
             InitializeComponent();
+        }
 
-            HomePanel.Controls.Add(UserControls.SignInUC.Instance);
-            UserControls.SignInUC.Instance.Dock = DockStyle.Fill;
-            UserControls.SignInUC.Instance.BringToFront();
+
+        private void linkSignIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UserControls.SignUpUC.Instance.SendToBack();
+
         }
     }
 }

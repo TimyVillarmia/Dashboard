@@ -29,26 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.GradientPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.BtnProducts = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnTeam = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnHome = new Guna.UI2.WinForms.Guna2TileButton();
+            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblLogoname = new Guna.UI2.WinForms.Guna2TextBox();
             this.BorderlessForm = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.GradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // GradientPanel
             // 
@@ -162,6 +156,19 @@
             this.BtnHome.Text = "HOME";
             this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
+            // PicLogo
+            // 
+            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
+            this.PicLogo.ImageRotate = 0F;
+            this.PicLogo.Location = new System.Drawing.Point(59, 33);
+            this.PicLogo.Name = "PicLogo";
+            this.PicLogo.Size = new System.Drawing.Size(153, 61);
+            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicLogo.TabIndex = 4;
+            this.PicLogo.TabStop = false;
+            this.PicLogo.Click += new System.EventHandler(this.PicLogo_Click);
+            // 
             // lblLogoname
             // 
             this.lblLogoname.BackColor = System.Drawing.Color.Transparent;
@@ -195,17 +202,11 @@
             this.guna2DragControl1.TargetControl = this.GradientPanel;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // PicLogo
+            // guna2DragControl2
             // 
-            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
-            this.PicLogo.ImageRotate = 0F;
-            this.PicLogo.Location = new System.Drawing.Point(59, 33);
-            this.PicLogo.Name = "PicLogo";
-            this.PicLogo.Size = new System.Drawing.Size(153, 61);
-            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PicLogo.TabIndex = 4;
-            this.PicLogo.TabStop = false;
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.MainPanel;
+            this.guna2DragControl2.UseTransparentDrag = true;
             // 
             // MainForm
             // 
@@ -224,10 +225,7 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel GradientPanel;
-        private Guna.UI2.WinForms.Guna2Panel MainPanel;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2TileButton BtnProducts;
         private Guna.UI2.WinForms.Guna2TileButton BtnTeam;
@@ -236,5 +234,7 @@
         private Guna.UI2.WinForms.Guna2TextBox lblLogoname;
         private Guna.UI2.WinForms.Guna2Elipse BorderlessForm;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Panel MainPanel;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }

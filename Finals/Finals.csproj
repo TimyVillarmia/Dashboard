@@ -85,6 +85,12 @@
     <Compile Include="UserControls\SignInUC.Designer.cs">
       <DependentUpon>SignInUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\SignUpUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SignUpUC.Designer.cs">
+      <DependentUpon>SignUpUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\TeamUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SignInUC.resx">
       <DependentUpon>SignInUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SignUpUC.resx">
+      <DependentUpon>SignUpUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TeamUC.resx">
       <DependentUpon>TeamUC.cs</DependentUpon>

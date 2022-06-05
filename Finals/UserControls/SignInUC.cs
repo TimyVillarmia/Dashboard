@@ -32,5 +32,21 @@ namespace Finals.UserControls
         {
 
         }
+
+
+
+        private void linkSignUp_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (!PanelSignIn.Controls.Contains(UserControls.SignUpUC.Instance))
+            {
+                PanelSignIn.Controls.Add(UserControls.SignUpUC.Instance);
+                UserControls.SignUpUC.Instance.BringToFront();
+            }
+            else
+                UserControls.SignUpUC.Instance.BringToFront();
+        }
+
+
+        
     }
 }
