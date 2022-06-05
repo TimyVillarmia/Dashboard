@@ -61,5 +61,17 @@ namespace Finals.UserControls
                 txtPassword.PasswordChar = '•';
             }
         }
+
+        private void linkForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            if (!PanelSignIn.Controls.Contains(UserControls.ForgotPassUC.Instance))
+            {
+                Controls.Add(UserControls.ForgotPassUC.Instance);
+                UserControls.ForgotPassUC.Instance.BringToFront();
+            }
+            else
+                UserControls.ForgotPassUC.Instance.BringToFront();
+        }
     }
 }

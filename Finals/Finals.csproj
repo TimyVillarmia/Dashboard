@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ForgotPassUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ForgotPassUC.Designer.cs">
+      <DependentUpon>ForgotPassUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\HomeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +116,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ForgotPassUC.resx">
+      <DependentUpon>ForgotPassUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Finals.UserControls
@@ -15,8 +8,6 @@ namespace Finals.UserControls
     {
 
         private static SignUpUC _instance;
-        static Regex validate_emailaddress = Email_Validation();
-
         public static SignUpUC Instance
         {
             get
@@ -29,14 +20,13 @@ namespace Finals.UserControls
         public SignUpUC()
         {
             InitializeComponent();
-        }
-
-        private static Regex Email_Validation()
-        {
-            string pattern = @"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$";
-            return new Regex(pattern, RegexOptions.IgnoreCase);
 
         }
+
+    
+
+
+
 
 
         private void linkSignIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -119,10 +109,8 @@ namespace Finals.UserControls
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
-
         }
     }
 
-} 
-    
+}
+
