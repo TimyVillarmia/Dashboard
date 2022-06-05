@@ -30,14 +30,15 @@
         {
             this.PanelSignIn = new Guna.UI2.WinForms.Guna2Panel();
             this.SignInPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.togglePass = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.linkSignUp = new System.Windows.Forms.LinkLabel();
             this.lblHello = new System.Windows.Forms.Label();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
+            this.picHello = new Guna.UI2.WinForms.Guna2PictureBox();
             this.linkForgotPass = new System.Windows.Forms.LinkLabel();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblAlt = new System.Windows.Forms.Label();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.picHello = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PanelSignIn.SuspendLayout();
             this.SignInPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHello)).BeginInit();
@@ -54,6 +55,7 @@
             // SignInPanel
             // 
             this.SignInPanel.BorderRadius = 18;
+            this.SignInPanel.Controls.Add(this.togglePass);
             this.SignInPanel.Controls.Add(this.linkSignUp);
             this.SignInPanel.Controls.Add(this.lblHello);
             this.SignInPanel.Controls.Add(this.btnSignIn);
@@ -66,6 +68,23 @@
             this.SignInPanel.Name = "SignInPanel";
             this.SignInPanel.Size = new System.Drawing.Size(414, 550);
             this.SignInPanel.TabIndex = 2;
+            // 
+            // togglePass
+            // 
+            this.togglePass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.togglePass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.togglePass.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.togglePass.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.togglePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.togglePass.Location = new System.Drawing.Point(336, 345);
+            this.togglePass.Name = "togglePass";
+            this.togglePass.Size = new System.Drawing.Size(35, 20);
+            this.togglePass.TabIndex = 9;
+            this.togglePass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.togglePass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.togglePass.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.togglePass.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.togglePass.CheckedChanged += new System.EventHandler(this.togglePass_CheckedChanged);
             // 
             // linkSignUp
             // 
@@ -94,6 +113,7 @@
             // btnSignIn
             // 
             this.btnSignIn.BorderRadius = 12;
+            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSignIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -106,6 +126,18 @@
             this.btnSignIn.Size = new System.Drawing.Size(343, 50);
             this.btnSignIn.TabIndex = 7;
             this.btnSignIn.Text = "Sign In";
+            // 
+            // picHello
+            // 
+            this.picHello.FillColor = System.Drawing.Color.Transparent;
+            this.picHello.Image = global::Finals.Properties.Resources.casual_life_3d_young_man_using_laptop_and_talking_on_the_phone;
+            this.picHello.ImageRotate = 0F;
+            this.picHello.Location = new System.Drawing.Point(180, 17);
+            this.picHello.Name = "picHello";
+            this.picHello.Size = new System.Drawing.Size(231, 192);
+            this.picHello.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHello.TabIndex = 3;
+            this.picHello.TabStop = false;
             // 
             // linkForgotPass
             // 
@@ -179,18 +211,6 @@
             this.txtPassword.Size = new System.Drawing.Size(343, 49);
             this.txtPassword.TabIndex = 2;
             // 
-            // picHello
-            // 
-            this.picHello.FillColor = System.Drawing.Color.Transparent;
-            this.picHello.Image = global::Finals.Properties.Resources.casual_life_3d_young_man_using_laptop_and_talking_on_the_phone;
-            this.picHello.ImageRotate = 0F;
-            this.picHello.Location = new System.Drawing.Point(180, 17);
-            this.picHello.Name = "picHello";
-            this.picHello.Size = new System.Drawing.Size(231, 192);
-            this.picHello.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHello.TabIndex = 3;
-            this.picHello.TabStop = false;
-            // 
             // SignInUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +240,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox picHello;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel SignInPanel;
         private System.Windows.Forms.LinkLabel linkSignUp;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch togglePass;
     }
 }

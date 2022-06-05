@@ -26,6 +26,8 @@ namespace Finals.UserControls
         public SignInUC()
         {
             InitializeComponent();
+
+            txtPassword.UseSystemPasswordChar = false;
         }
 
         private void SignInUC_Load(object sender, EventArgs e)
@@ -48,7 +50,16 @@ namespace Finals.UserControls
             //    UserControls.SignUpUC.Instance.BringToFront();
         }
 
-
-
+        private void togglePass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (togglePass.Checked)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '•';
+            }
+        }
     }
 }
