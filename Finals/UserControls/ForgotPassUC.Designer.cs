@@ -104,6 +104,7 @@
             this.btnOTPsend.Size = new System.Drawing.Size(128, 50);
             this.btnOTPsend.TabIndex = 16;
             this.btnOTPsend.Text = "Send OTP";
+            this.btnOTPsend.Click += new System.EventHandler(this.btnOTPsend_Click);
             // 
             // txtEmail
             // 
@@ -205,6 +206,7 @@
             this.btnRecover.Size = new System.Drawing.Size(343, 50);
             this.btnRecover.TabIndex = 7;
             this.btnRecover.Text = "Recover Account";
+            this.btnRecover.Click += new System.EventHandler(this.btnRecover_Click);
             // 
             // ForgotPassUC
             // 
