@@ -26,5 +26,18 @@ namespace Finals.UserControls
         {
             InitializeComponent();
         }
+
+        private void picbox1_MouseHover(object sender, EventArgs e)
+        {
+            lblStory.Hide();
+            lblText.Hide();
+
+        }
+
+        private void picbox1_MouseLeave(object sender, EventArgs e)
+        {
+            lblStory.Show();
+            lblText.Show();
+        }
     }
 }

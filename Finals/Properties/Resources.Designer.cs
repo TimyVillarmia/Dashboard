@@ -63,6 +63,26 @@ namespace Finals.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap business_3d_young_man_in_casual_clothes_sitting_on_the_floor_with_phone {
+            get {
+                object obj = ResourceManager.GetObject("business-3d-young-man-in-casual-clothes-sitting-on-the-floor-with-phone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap business_3d_young_woman_high_five_with_dog_in_sweater {
+            get {
+                object obj = ResourceManager.GetObject("business-3d-young-woman-high-five-with-dog-in-sweater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap casual_life_3d_girl_and_boy_sitting_with_laptop_1 {
             get {
                 object obj = ResourceManager.GetObject("casual-life-3d-girl-and-boy-sitting-with-laptop-1", resourceCulture);
@@ -86,6 +106,26 @@ namespace Finals.Properties {
         internal static System.Drawing.Bitmap casual_life_3d_young_woman_in_headphones_sitting_in_front_of_laptop_and_waving {
             get {
                 object obj = ResourceManager.GetObject("casual-life-3d-young-woman-in-headphones-sitting-in-front-of-laptop-and-waving", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download1 {
+            get {
+                object obj = ResourceManager.GetObject("download1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

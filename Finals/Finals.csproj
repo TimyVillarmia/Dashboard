@@ -216,5 +216,17 @@
   <ItemGroup>
     <Folder Include="Accounts\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-3d-young-man-in-casual-clothes-sitting-on-the-floor-with-phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-3d-young-woman-high-five-with-dog-in-sweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

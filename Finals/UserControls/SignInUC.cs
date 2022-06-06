@@ -76,13 +76,24 @@ namespace Finals.UserControls
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //}
-            //catch
-            //{
+            if (txtUsername.Text != "admin" && txtPassword.Text == "admin")
+            {
+                MessageBox.Show("Incorrect Username");
+            }
+            else if (txtUsername.Text == "admin" && txtPassword.Text != "admin")
+            {
+                MessageBox.Show("Incorrect Password");
+            }
+            else if (txtUsername.Text != "admin" && txtPassword.Text != "admin")
+            {
+                MessageBox.Show("Incorrect Username and Password");
+            }
+            else
+            {
+                MessageBox.Show("Login Successfully");
 
-            //}
+            }
+
 
         }
     }

@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblText.Text" xml:space="preserve">
+    <value>We're a dedicated group with a clear mission. We believe that working in a "real-world" web 
+production environment with other link-minded teens may teach you a lot. We found five 
+strong, committed members who are still active in the group today
+
+• To provide high-quality software on time and on budget, we personalize the software 
+development process to your individual company demands.
+
+• We produce lively, user-friendly web designs that assure brand quality, user 
+engagement, and satisfaction, all of which contribute to a high conversion rate.</value>
+  </data>
 </root>

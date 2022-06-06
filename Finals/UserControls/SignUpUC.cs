@@ -134,14 +134,16 @@ namespace Finals.UserControls
                 string writeUsername = txtUsername.Text;
                 string writePassword = txtPassword.Text;
 
-                StreamWriter sw = new StreamWriter("F:/Visual Studio 2020/repos/orig/1stYr-Finals/Finals/Accounts/Accounts.txt");
+                //StreamWriter sw = new StreamWriter("F:/Visual Studio 2020/repos/orig/1stYr-Finals/Finals/Accounts/Accounts.txt");
 
-                sw.WriteLine("Email: " + writeEmail);
-                sw.WriteLine("Username:" + writeUsername);
-                sw.WriteLine("Password:" + writePassword);
-                sw.Flush();
-                sw.Close();
+                //sw.WriteLine("Email: " + writeEmail);
+                //sw.WriteLine("Username:" + writeUsername);
+                //sw.WriteLine("Password:" + writePassword);
+                //sw.Flush();
+                //sw.Close();
 
+                string writeText = "Hello World!";  
+                File.WriteAllText("filename.txt", writeText); 
 
 
 
