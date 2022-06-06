@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MailKit.Net.Smtp;
 using MailKit;
 using MimeKit;
+using System.IO;
 
 
 

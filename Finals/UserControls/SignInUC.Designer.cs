@@ -126,6 +126,7 @@
             this.btnSignIn.Size = new System.Drawing.Size(343, 50);
             this.btnSignIn.TabIndex = 7;
             this.btnSignIn.Text = "Sign In";
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // picHello
             // 

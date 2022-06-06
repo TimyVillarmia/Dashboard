@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace Finals.UserControls
 {
     public partial class SignInUC : UserControl
@@ -72,6 +72,18 @@ namespace Finals.UserControls
             }
             else
                 UserControls.ForgotPassUC.Instance.BringToFront();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //}
+            //catch
+            //{
+
+            //}
+
         }
     }
 }

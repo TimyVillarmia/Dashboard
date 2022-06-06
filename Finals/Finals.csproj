@@ -213,5 +213,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-closed-eye-24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Accounts\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

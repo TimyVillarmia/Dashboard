@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Finals.UserControls
 {
@@ -109,6 +110,46 @@ namespace Finals.UserControls
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+
+            if (txtPassword.Text != txtConfirmPass.Text)
+            {
+                MessageBox.Show("Password are not identical");
+            }
+    
+            else if (txtEmail.Text == string.Empty && txtUsername.Text == string.Empty)
+            {
+                MessageBox.Show("Please complete the form");
+            }
+            else if (txtPassword.Text == string.Empty && txtConfirmPass.Text == string.Empty)
+            {
+                MessageBox.Show("Please complete the form");
+            }
+            else if (checkboxTerms.Checked == false)
+            {
+                MessageBox.Show("Please check the Terms and Privacy Policy");
+            }
+            else
+            {
+                string writeEmail = txtEmail.Text;
+                string writeUsername = txtUsername.Text;
+                string writePassword = txtPassword.Text;
+
+                StreamWriter sw = new StreamWriter("F:/Visual Studio 2020/repos/orig/1stYr-Finals/Finals/Accounts/Accounts.txt");
+
+                sw.WriteLine("Email: " + writeEmail);
+                sw.WriteLine("Username:" + writeUsername);
+                sw.WriteLine("Password:" + writePassword);
+                sw.Flush();
+                sw.Close();
+
+
+
+
+                UserControls.SignUpUC.Instance.SendToBack();
+                MessageBox.Show("Account successfully created, Please Sign In");
+
+
+            }
         }
     }
 
