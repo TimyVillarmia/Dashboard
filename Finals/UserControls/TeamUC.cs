@@ -27,10 +27,11 @@ namespace Finals.UserControls
             InitializeComponent();
 
 
-
+            
         }
 
-        public bool picboxclick = true;
+        bool picboxclick = true;
+        string linklabel = "";
 
 
 
@@ -44,6 +45,7 @@ namespace Finals.UserControls
                 lblText.Visible = false;
                 linkFacebook.Text = "https://www.facebook.com/anzel.ybanez.5";
                 picboxclick = false;
+                linklabel = linkFacebook.Text;
             }
             else
             {
@@ -63,6 +65,7 @@ namespace Finals.UserControls
                 lblText.Visible = false;
                 linkFacebook.Text = "https://www.facebook.com/VillarmiaTimy/";
                 picboxclick = false;
+                linklabel = linkFacebook.Text;
             }
             else
             {
@@ -81,6 +84,7 @@ namespace Finals.UserControls
                 lblText.Visible = false;
                 linkFacebook.Text = "https://www.facebook.com/chelo.daguplo";
                 picboxclick = false;
+                linklabel = linkFacebook.Text;
             }
             else
             {
@@ -99,6 +103,7 @@ namespace Finals.UserControls
                 lblText.Visible = false;
                 linkFacebook.Text = "https://www.facebook.com/chivibot";
                 picboxclick = false;
+                linklabel = linkFacebook.Text;
             }
             else
             {
@@ -117,6 +122,7 @@ namespace Finals.UserControls
                 lblText.Visible = false;
                 linkFacebook.Text = "https://www.facebook.com/ginelyn.lucena";
                 picboxclick = false;
+                linklabel = linkFacebook.Text;
             }
             else
             {
@@ -126,7 +132,13 @@ namespace Finals.UserControls
 
             }
 
-     
         }
+
+        private void linkFacebook_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(linklabel);
+        }
+
+
     }
 }

@@ -116,6 +116,7 @@
             this.linkFacebook.TabStop = true;
             this.linkFacebook.Text = "https://www.facebook.com/VillarmiaTimy";
             this.linkFacebook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkFacebook.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkFacebook_LinkClicked);
             // 
             // lblHeadline
             // 

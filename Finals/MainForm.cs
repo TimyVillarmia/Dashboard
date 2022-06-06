@@ -27,6 +27,8 @@ namespace Finals
 
         }
 
+      
+
         private void BtnHome_Click(object sender, EventArgs e)
         {
             this.BtnHome.FillColor = Color.FromArgb(255, 110, 108);
