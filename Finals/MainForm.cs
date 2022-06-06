@@ -35,6 +35,9 @@ namespace Finals
             this.BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
             this.BtnProducts.FillColor = Color.Transparent;
             this.BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
+            UserControls.SignInUC.Instance.SendToBack();
+            UserControls.SignUpUC.Instance.SendToBack();
+
 
 
             if (!MainPanel.Controls.Contains(UserControls.HomeUC.Instance))

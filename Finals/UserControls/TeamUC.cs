@@ -25,31 +25,108 @@ namespace Finals.UserControls
         public TeamUC()
         {
             InitializeComponent();
-        }
 
-        private void picbox1_MouseHover(object sender, EventArgs e)
-        {
-            lblName.Text = "Anzel Ybañez";
-            lblText.SendToBack();
+
 
         }
 
-        private void picbox1_MouseLeave(object sender, EventArgs e)
+        public bool picboxclick = true;
+
+
+
+
+        private void picbox1_Click(object sender, EventArgs e)
         {
-            lblName.Text = "Our Story";
-            lblText.BringToFront();
+            
+            if (picboxclick == true)
+            {
+                lblName.Text = "Anzel Ybañez";
+                lblText.Visible = false;
+                linkFacebook.Text = "https://www.facebook.com/anzel.ybanez.5";
+                picboxclick = false;
+            }
+            else
+            {
+                lblName.Text = "Our Story";
+                lblText.Visible = true;
+                picboxclick = true;
+            }
+
         }
 
-        private void picbox2_MouseHover(object sender, EventArgs e)
+        private void picbox2_Click(object sender, EventArgs e)
         {
-            lblName.Text = "Timy Villarmia";
-            lblText.SendToBack();
+         
+            if (picboxclick == true)
+            {
+                lblName.Text = "Timy Villarmia";
+                lblText.Visible = false;
+                linkFacebook.Text = "https://www.facebook.com/VillarmiaTimy/";
+                picboxclick = false;
+            }
+            else
+            {
+                lblName.Text = "Our Story";
+                lblText.Visible = true;
+                picboxclick = true;
+            }
         }
 
-        private void picbox2_MouseLeave(object sender, EventArgs e)
+        private void picbox3_Click(object sender, EventArgs e)
         {
-            lblName.Text = "Our Story";
-            lblText.BringToFront();
+     
+            if (picboxclick == true)
+            {
+                lblName.Text = "Chelo Angelica Daguplo";
+                lblText.Visible = false;
+                linkFacebook.Text = "https://www.facebook.com/chelo.daguplo";
+                picboxclick = false;
+            }
+            else
+            {
+                lblName.Text = "Our Story";
+                lblText.Visible = true;
+                picboxclick = true;
+            }
+        }
+
+        private void picbox4_Click(object sender, EventArgs e)
+        {
+   
+            if (picboxclick == true)
+            {
+                lblName.Text = "Chevy Joe Gades Talisaysay";
+                lblText.Visible = false;
+                linkFacebook.Text = "https://www.facebook.com/chivibot";
+                picboxclick = false;
+            }
+            else
+            {
+                lblName.Text = "Our Story";
+                lblText.Visible = true;
+                picboxclick = true;
+            }
+        }
+
+        private void picbox5_Click(object sender, EventArgs e)
+        {
+
+            if (picboxclick == true)
+            {
+                lblName.Text = "Ginelyn Lucena";
+                lblText.Visible = false;
+                linkFacebook.Text = "https://www.facebook.com/ginelyn.lucena";
+                picboxclick = false;
+            }
+            else
+            {
+                lblName.Text = "Our Story";
+                lblText.Visible = true;
+                picboxclick = true;
+
+            }
+
+     
         }
     }
 }
