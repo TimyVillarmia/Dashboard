@@ -29,15 +29,27 @@ namespace Finals.UserControls
 
         private void picbox1_MouseHover(object sender, EventArgs e)
         {
-            lblStory.Hide();
-            lblText.Hide();
+            lblName.Text = "Anzel Ybañez";
+            lblText.SendToBack();
 
         }
 
         private void picbox1_MouseLeave(object sender, EventArgs e)
         {
-            lblStory.Show();
-            lblText.Show();
+            lblName.Text = "Our Story";
+            lblText.BringToFront();
+        }
+
+        private void picbox2_MouseHover(object sender, EventArgs e)
+        {
+            lblName.Text = "Timy Villarmia";
+            lblText.SendToBack();
+        }
+
+        private void picbox2_MouseLeave(object sender, EventArgs e)
+        {
+            lblName.Text = "Our Story";
+            lblText.BringToFront();
         }
     }
 }

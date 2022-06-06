@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeamUC));
             this.panelIntroduction = new Guna.UI2.WinForms.Guna2Panel();
             this.lblText = new System.Windows.Forms.Label();
-            this.lblStory = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblHeadline = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.picbox5 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -50,7 +50,7 @@
             // panelIntroduction
             // 
             this.panelIntroduction.Controls.Add(this.lblText);
-            this.panelIntroduction.Controls.Add(this.lblStory);
+            this.panelIntroduction.Controls.Add(this.lblName);
             this.panelIntroduction.FillColor = System.Drawing.Color.White;
             this.panelIntroduction.Location = new System.Drawing.Point(250, 442);
             this.panelIntroduction.Name = "panelIntroduction";
@@ -59,23 +59,25 @@
             // 
             // lblText
             // 
+            this.lblText.BackColor = System.Drawing.Color.White;
             this.lblText.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.Location = new System.Drawing.Point(32, 62);
+            this.lblText.Location = new System.Drawing.Point(32, 76);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(701, 181);
             this.lblText.TabIndex = 9;
             this.lblText.Text = resources.GetString("lblText.Text");
             // 
-            // lblStory
+            // lblName
             // 
-            this.lblStory.AutoSize = true;
-            this.lblStory.Font = new System.Drawing.Font("Roboto Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
-            this.lblStory.Location = new System.Drawing.Point(28, 14);
-            this.lblStory.Name = "lblStory";
-            this.lblStory.Size = new System.Drawing.Size(155, 38);
-            this.lblStory.TabIndex = 8;
-            this.lblStory.Text = "Our Story";
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.White;
+            this.lblName.Font = new System.Drawing.Font("Roboto Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
+            this.lblName.Location = new System.Drawing.Point(28, 14);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(230, 58);
+            this.lblName.TabIndex = 8;
+            this.lblName.Text = "Our Story";
             // 
             // lblHeadline
             // 
@@ -112,12 +114,12 @@
             // picbox1
             // 
             this.picbox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbox1.Image = global::Finals.Properties.Resources.business_3d_young_man_in_casual_clothes_sitting_on_the_floor_with_phone;
+            this.picbox1.Image = global::Finals.Properties.Resources.AnzelPhoto;
             this.picbox1.ImageRotate = 0F;
             this.picbox1.Location = new System.Drawing.Point(0, 184);
             this.picbox1.Name = "picbox1";
             this.picbox1.Size = new System.Drawing.Size(250, 258);
-            this.picbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox1.TabIndex = 16;
             this.picbox1.TabStop = false;
             this.picbox1.MouseLeave += new System.EventHandler(this.picbox1_MouseLeave);
@@ -134,6 +136,8 @@
             this.picbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox2.TabIndex = 15;
             this.picbox2.TabStop = false;
+            this.picbox2.MouseLeave += new System.EventHandler(this.picbox2_MouseLeave);
+            this.picbox2.MouseHover += new System.EventHandler(this.picbox2_MouseHover);
             // 
             // picbox3
             // 
@@ -186,7 +190,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel panelIntroduction;
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.Label lblStory;
+        private System.Windows.Forms.Label lblName;
         private Guna.UI2.WinForms.Guna2PictureBox picbox4;
         private Guna.UI2.WinForms.Guna2PictureBox picbox3;
         private Guna.UI2.WinForms.Guna2PictureBox picbox2;
