@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.GradientPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.HomePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.BtnProducts = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnTeam = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnHome = new Guna.UI2.WinForms.Guna2TileButton();
-            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblLogoname = new Guna.UI2.WinForms.Guna2TextBox();
             this.BorderlessForm = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.GradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // GradientPanel
             // 
-            this.GradientPanel.Controls.Add(this.MainPanel);
+            this.GradientPanel.Controls.Add(this.HomePanel);
             this.GradientPanel.Controls.Add(this.guna2ControlBox1);
             this.GradientPanel.Controls.Add(this.BtnProducts);
             this.GradientPanel.Controls.Add(this.BtnTeam);
@@ -63,14 +63,13 @@
             this.GradientPanel.Size = new System.Drawing.Size(1000, 800);
             this.GradientPanel.TabIndex = 1;
             // 
-            // MainPanel
+            // HomePanel
             // 
-            this.MainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MainPanel.Location = new System.Drawing.Point(0, 100);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1000, 700);
-            this.MainPanel.TabIndex = 25;
+            this.HomePanel.BackColor = System.Drawing.Color.Transparent;
+            this.HomePanel.Location = new System.Drawing.Point(0, 100);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(1000, 700);
+            this.HomePanel.TabIndex = 25;
             // 
             // guna2ControlBox1
             // 
@@ -156,19 +155,6 @@
             this.BtnHome.Text = "HOME";
             this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
-            // PicLogo
-            // 
-            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
-            this.PicLogo.ImageRotate = 0F;
-            this.PicLogo.Location = new System.Drawing.Point(59, 33);
-            this.PicLogo.Name = "PicLogo";
-            this.PicLogo.Size = new System.Drawing.Size(153, 61);
-            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PicLogo.TabIndex = 4;
-            this.PicLogo.TabStop = false;
-            this.PicLogo.Click += new System.EventHandler(this.PicLogo_Click);
-            // 
             // lblLogoname
             // 
             this.lblLogoname.BackColor = System.Drawing.Color.Transparent;
@@ -205,8 +191,21 @@
             // guna2DragControl2
             // 
             this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl2.TargetControl = this.MainPanel;
+            this.guna2DragControl2.TargetControl = this.HomePanel;
             this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // PicLogo
+            // 
+            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
+            this.PicLogo.ImageRotate = 0F;
+            this.PicLogo.Location = new System.Drawing.Point(59, 33);
+            this.PicLogo.Name = "PicLogo";
+            this.PicLogo.Size = new System.Drawing.Size(153, 61);
+            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicLogo.TabIndex = 4;
+            this.PicLogo.TabStop = false;
+            this.PicLogo.Click += new System.EventHandler(this.PicLogo_Click);
             // 
             // MainForm
             // 
@@ -236,5 +235,6 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel MainPanel;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2Panel HomePanel;
     }
 }

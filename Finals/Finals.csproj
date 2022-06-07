@@ -105,29 +105,17 @@
     <Compile Include="UserControls\HomeUC.Designer.cs">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Mode.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\Mode.Designer.cs">
-      <DependentUpon>Mode.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ProductUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ProductUC.Designer.cs">
       <DependentUpon>ProductUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SignInUC.cs">
+    <Compile Include="UserControls\ModeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SignInUC.Designer.cs">
-      <DependentUpon>SignInUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SignUpUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\SignUpUC.Designer.cs">
-      <DependentUpon>SignUpUC.cs</DependentUpon>
+    <Compile Include="UserControls\ModeUC.Designer.cs">
+      <DependentUpon>ModeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\TeamUC.cs">
       <SubType>UserControl</SubType>
@@ -155,17 +143,11 @@
     <EmbeddedResource Include="UserControls\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Mode.resx">
-      <DependentUpon>Mode.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProductUC.resx">
       <DependentUpon>ProductUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SignInUC.resx">
-      <DependentUpon>SignInUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SignUpUC.resx">
-      <DependentUpon>SignUpUC.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ModeUC.resx">
+      <DependentUpon>ModeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TeamUC.resx">
       <DependentUpon>TeamUC.cs</DependentUpon>

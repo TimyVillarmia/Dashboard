@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGetStarted = new Guna.UI2.WinForms.Guna2Button();
             this.lblHeadline2 = new System.Windows.Forms.Label();
-            this.BtnSIgnIn = new Guna.UI2.WinForms.Guna2TileButton();
             this.picHeadline1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picMainimage = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.HomePanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.HomePanel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picHeadline1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMainimage)).BeginInit();
-            this.HomePanel.SuspendLayout();
+            this.HomePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // BtnSignUp
+            // btnGetStarted
             // 
-            this.BtnSignUp.BackColor = System.Drawing.Color.Transparent;
-            this.BtnSignUp.BorderRadius = 20;
-            this.BtnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
-            this.BtnSignUp.Font = new System.Drawing.Font("Roboto Black", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSignUp.ForeColor = System.Drawing.Color.White;
-            this.BtnSignUp.Location = new System.Drawing.Point(321, 543);
-            this.BtnSignUp.Name = "BtnSignUp";
-            this.BtnSignUp.Size = new System.Drawing.Size(240, 76);
-            this.BtnSignUp.TabIndex = 47;
-            this.BtnSignUp.Text = "SIGN UP";
-            this.BtnSignUp.Click += new System.EventHandler(this.BtnSignUp_Click);
+            this.btnGetStarted.BackColor = System.Drawing.Color.Transparent;
+            this.btnGetStarted.BorderRadius = 20;
+            this.btnGetStarted.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGetStarted.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGetStarted.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGetStarted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGetStarted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGetStarted.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
+            this.btnGetStarted.Font = new System.Drawing.Font("Roboto Black", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGetStarted.ForeColor = System.Drawing.Color.White;
+            this.btnGetStarted.Location = new System.Drawing.Point(59, 517);
+            this.btnGetStarted.Name = "btnGetStarted";
+            this.btnGetStarted.Size = new System.Drawing.Size(352, 86);
+            this.btnGetStarted.TabIndex = 47;
+            this.btnGetStarted.Text = "GET STARTED";
+            this.btnGetStarted.Click += new System.EventHandler(this.BtnSignUp_Click);
             // 
             // lblHeadline2
             // 
@@ -70,29 +69,6 @@
             this.lblHeadline2.TabIndex = 46;
             this.lblHeadline2.Text = "CS201 Dashboard is a powerful and flexible \ndesktop application created by CS201 " +
     "Group 2  ";
-            // 
-            // BtnSIgnIn
-            // 
-            this.BtnSIgnIn.BackColor = System.Drawing.Color.Transparent;
-            this.BtnSIgnIn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
-            this.BtnSIgnIn.BorderRadius = 20;
-            this.BtnSIgnIn.BorderThickness = 2;
-            this.BtnSIgnIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSIgnIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnSIgnIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnSIgnIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnSIgnIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnSIgnIn.FillColor = System.Drawing.Color.Transparent;
-            this.BtnSIgnIn.Font = new System.Drawing.Font("Roboto Black", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSIgnIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
-            this.BtnSIgnIn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
-            this.BtnSIgnIn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BtnSIgnIn.Location = new System.Drawing.Point(59, 543);
-            this.BtnSIgnIn.Name = "BtnSIgnIn";
-            this.BtnSIgnIn.Size = new System.Drawing.Size(240, 76);
-            this.BtnSIgnIn.TabIndex = 48;
-            this.BtnSIgnIn.Text = "SIGN IN";
-            this.BtnSIgnIn.Click += new System.EventHandler(this.BtnSIgnIn_Click_1);
             // 
             // picHeadline1
             // 
@@ -119,41 +95,39 @@
             this.picMainimage.TabIndex = 44;
             this.picMainimage.TabStop = false;
             // 
-            // HomePanel
+            // HomePanel1
             // 
-            this.HomePanel.Controls.Add(this.picMainimage);
-            this.HomePanel.Controls.Add(this.picHeadline1);
-            this.HomePanel.Controls.Add(this.BtnSIgnIn);
-            this.HomePanel.Controls.Add(this.lblHeadline2);
-            this.HomePanel.Controls.Add(this.BtnSignUp);
-            this.HomePanel.Location = new System.Drawing.Point(0, 0);
-            this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(1000, 700);
-            this.HomePanel.TabIndex = 46;
+            this.HomePanel1.Controls.Add(this.picMainimage);
+            this.HomePanel1.Controls.Add(this.picHeadline1);
+            this.HomePanel1.Controls.Add(this.lblHeadline2);
+            this.HomePanel1.Controls.Add(this.btnGetStarted);
+            this.HomePanel1.Location = new System.Drawing.Point(0, 0);
+            this.HomePanel1.Name = "HomePanel1";
+            this.HomePanel1.Size = new System.Drawing.Size(1000, 700);
+            this.HomePanel1.TabIndex = 46;
             // 
             // HomeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.HomePanel1);
             this.Name = "HomeUC";
             this.Size = new System.Drawing.Size(1000, 700);
             ((System.ComponentModel.ISupportInitialize)(this.picHeadline1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMainimage)).EndInit();
-            this.HomePanel.ResumeLayout(false);
-            this.HomePanel.PerformLayout();
+            this.HomePanel1.ResumeLayout(false);
+            this.HomePanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button BtnSignUp;
+        private Guna.UI2.WinForms.Guna2Button btnGetStarted;
         private System.Windows.Forms.Label lblHeadline2;
-        private Guna.UI2.WinForms.Guna2TileButton BtnSIgnIn;
         private Guna.UI2.WinForms.Guna2PictureBox picHeadline1;
         private Guna.UI2.WinForms.Guna2PictureBox picMainimage;
-        private Guna.UI2.WinForms.Guna2Panel HomePanel;
+        private Guna.UI2.WinForms.Guna2Panel HomePanel1;
     }
 }

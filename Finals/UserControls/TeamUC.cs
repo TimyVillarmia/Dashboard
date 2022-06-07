@@ -32,7 +32,7 @@ namespace Finals.UserControls
         string linklabel = "";
 
 
-        
+
 
         private void picbox1_Click(object sender, EventArgs e)
         {

@@ -12,94 +12,102 @@ namespace Finals
 {
     public partial class MainForm : Form
     {
+        
+
+
         public MainForm()
         {
             InitializeComponent();
 
-            this.BtnHome.FillColor = Color.FromArgb(255, 110, 108);
-            this.BtnHome.ForeColor = Color.White;
-
-
-            MainPanel.Controls.Add(UserControls.HomeUC.Instance);
+            HomePanel.Controls.Add(UserControls.HomeUC.Instance);
             UserControls.HomeUC.Instance.BringToFront();
 
-
-
         }
+    
 
-      
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
-            this.BtnHome.FillColor = Color.FromArgb(255, 110, 108);
-            this.BtnHome.ForeColor = Color.White;
-            this.BtnTeam.FillColor = Color.Transparent;
-            this.BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
-            this.BtnProducts.FillColor = Color.Transparent;
-            this.BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
-            UserControls.SignInUC.Instance.SendToBack();
-            UserControls.SignUpUC.Instance.SendToBack();
+            BtnHome.FillColor = Color.FromArgb(255, 110, 108);
+            BtnHome.ForeColor = Color.White;
+            BtnTeam.FillColor = Color.Transparent;
+            BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnProducts.FillColor = Color.Transparent;
+            BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
 
+            UserControls.ModeUC.Instance.SendToBack();
 
-
-            if (!MainPanel.Controls.Contains(UserControls.HomeUC.Instance))
+            if (!HomePanel.Controls.Contains(UserControls.HomeUC.Instance))
             {
-   
-                MainPanel.Controls.Add(UserControls.HomeUC.Instance);
+
+                HomePanel.Controls.Add(UserControls.HomeUC.Instance);
                 UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
                 UserControls.HomeUC.Instance.BringToFront();
             }
             else
+            {
                 UserControls.HomeUC.Instance.BringToFront();
+
+            }
 
 
         }
 
         private void BtnTeam_Click(object sender, EventArgs e)
         {
-            this.BtnHome.FillColor = Color.Transparent;
-            this.BtnHome.ForeColor = Color.FromArgb(32, 22, 16);
-            this.BtnTeam.FillColor = Color.FromArgb(255, 110, 108);
-            this.BtnTeam.ForeColor = Color.White;
-            this.BtnProducts.FillColor = Color.Transparent;
-            this.BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnHome.FillColor = Color.Transparent;
+            BtnHome.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnTeam.FillColor = Color.FromArgb(255, 110, 108);
+            BtnTeam.ForeColor = Color.White;
+            BtnProducts.FillColor = Color.Transparent;
+            BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
 
-            if (!MainPanel.Controls.Contains(UserControls.TeamUC.Instance))
+            if (!HomePanel.Controls.Contains(UserControls.TeamUC.Instance))
             {
-                MainPanel.Controls.Add(UserControls.TeamUC.Instance);
-                UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
+                HomePanel.Controls.Add(UserControls.TeamUC.Instance);
+                UserControls.TeamUC.Instance.Dock = DockStyle.Fill;
 
                 UserControls.TeamUC.Instance.BringToFront();
             }
             else
+            {
                 UserControls.TeamUC.Instance.BringToFront();
+
+            }
         }
 
         private void BtnProducts_Click(object sender, EventArgs e)
         {
-            this.BtnHome.FillColor = Color.Transparent;
-            this.BtnHome.ForeColor = Color.FromArgb(32, 22, 16);
-            this.BtnTeam.FillColor = Color.Transparent;
-            this.BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
-            this.BtnProducts.FillColor = Color.FromArgb(255, 110, 108);
-            this.BtnProducts.ForeColor = Color.White;
+            BtnHome.FillColor = Color.Transparent;
+            BtnHome.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnTeam.FillColor = Color.Transparent;
+            BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnProducts.FillColor = Color.FromArgb(255, 110, 108);
+            BtnProducts.ForeColor = Color.White;
 
 
-            if (!MainPanel.Controls.Contains(UserControls.ProductUC.Instance))
+            if (!HomePanel.Controls.Contains(UserControls.ProductUC.Instance))
             {
-                MainPanel.Controls.Add(UserControls.ProductUC.Instance);
+                HomePanel.Controls.Add(UserControls.ProductUC.Instance);
                 UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
                 UserControls.ProductUC.Instance.BringToFront();
             }
             else
+            {
                 UserControls.ProductUC.Instance.BringToFront();
+            }
 
         }
 
         private void PicLogo_Click(object sender, EventArgs e)
         {
+            UserControls.HomeUC.Instance.BringToFront();
 
 
+        }
+
+        private void BtnSIgnIn_Click(object sender, EventArgs e)
+        {
         }
     }
 }

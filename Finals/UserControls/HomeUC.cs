@@ -25,34 +25,20 @@ namespace Finals.UserControls
         public HomeUC()
         {
             InitializeComponent();
-
+           
         }
 
- 
-
-        private void BtnSIgnIn_Click_1(object sender, EventArgs e)
-        {
-            
-
-
-            if (!HomePanel.Controls.Contains(UserControls.SignInUC.Instance))
-            {
-                Controls.Add(UserControls.SignInUC.Instance);
-                UserControls.SignInUC.Instance.BringToFront();
-            }
-            else
-                UserControls.SignInUC.Instance.BringToFront();
-        }
 
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-            if (!HomePanel.Controls.Contains(UserControls.SignUpUC.Instance))
+            if (!HomePanel1.Controls.Contains(UserControls.ModeUC.Instance))
             {
-                Controls.Add(UserControls.SignUpUC.Instance);
-                UserControls.SignUpUC.Instance.BringToFront();
+                Controls.Add(UserControls.ModeUC.Instance);
+                UserControls.ModeUC.Instance.BringToFront();
+                
             }
             else
-                UserControls.SignUpUC.Instance.BringToFront();
+                UserControls.ModeUC.Instance.BringToFront();
         }
     }
 }
