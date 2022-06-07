@@ -103,6 +103,16 @@ namespace Finals.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap casual_life_3d_white_robot {
+            get {
+                object obj = ResourceManager.GetObject("casual-life-3d-white-robot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap casual_life_3d_young_man_using_laptop_and_talking_on_the_phone {
             get {
                 object obj = ResourceManager.GetObject("casual-life-3d-young-man-using-laptop-and-talking-on-the-phone", resourceCulture);
@@ -146,6 +156,16 @@ namespace Finals.Properties {
         internal static System.Drawing.Bitmap headline {
             get {
                 object obj = ResourceManager.GetObject("headline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hinterrhein {
+            get {
+                object obj = ResourceManager.GetObject("Hinterrhein", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +256,26 @@ namespace Finals.Properties {
         internal static System.Drawing.Bitmap LOGO {
             get {
                 object obj = ResourceManager.GetObject("LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mataura {
+            get {
+                object obj = ResourceManager.GetObject("Mataura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vorderrhein {
+            get {
+                object obj = ResourceManager.GetObject("Vorderrhein", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

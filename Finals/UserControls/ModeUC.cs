@@ -41,10 +41,11 @@ namespace Finals.UserControls
         {
 
         }
-
+        string RecoverEmail;
         string RegisteredEmail;
         string RegisteredUsername;
         string RegisteredPassword;
+        string OTP;
 
         private void linkSignUp_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -173,7 +174,14 @@ namespace Finals.UserControls
         {
             if (txtRegisterUsername.Text != string.Empty)
             {
-                txtRegisterUsername.BorderColor = Color.FromArgb(0, 128, 0);
+               if (txtRegisterUsername.Text.Length >= 8)
+                {
+                    txtRegisterUsername.BorderColor = Color.FromArgb(0, 128, 0);
+                }
+               else
+                {
+                    txtRegisterUsername.BorderColor = Color.FromArgb(255, 0, 0);
+                }
             }
             else
             {
@@ -183,22 +191,45 @@ namespace Finals.UserControls
 
         private void txtRegisterPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtRegisterPassword.Text.Length >= 8)
+            if (txtRegisterPassword.Text != string.Empty)
             {
-                txtRegisterPassword.BorderColor = Color.FromArgb(0, 128, 0);
+                if (txtRegisterPassword.Text.Length < 8 && txtConfirmPass.Text.Length < 8)
+                {
+                    txtRegisterPassword.BorderColor = Color.FromArgb(255, 0, 0);
+                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                }
+                else if (txtRegisterPassword.Text != txtConfirmPass.Text)
+                {
+                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                }
+                else
+                {
+                    txtRegisterPassword.BorderColor = Color.FromArgb(0, 128, 0);
+                }
             }
             else
             {
                 txtRegisterPassword.BorderColor = Color.FromArgb(255, 0, 0);
-                txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
             }
         }
 
         private void txtConfirmPass_TextChanged(object sender, EventArgs e)
         {
-            if (txtRegisterPassword.Text == txtConfirmPass.Text && txtRegisterPassword.Text.Length >= 8)
+            if (txtConfirmPass.Text != string.Empty)
             {
-                txtConfirmPass.BorderColor = Color.FromArgb(0, 128, 0);
+                if (txtRegisterPassword.Text.Length < 8 && txtConfirmPass.Text.Length < 8)
+                {
+                    txtRegisterPassword.BorderColor = Color.FromArgb(255, 0, 0);
+                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                }
+                else if (txtRegisterPassword.Text != txtConfirmPass.Text)
+                {
+                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                }
+                else
+                {
+                    txtRegisterPassword.BorderColor = Color.FromArgb(0, 128, 0);
+                }     
             }
             else
             {
@@ -222,56 +253,192 @@ namespace Finals.UserControls
 
         private void btnOTPsend_Click(object sender, EventArgs e)
         {
-            //OTP generator
-            var otp_char = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            var OTP = "";
-            Random rnd = new Random();
-
-            for (int i = 0; i < 6; i++)
+            if (RecoverEmail == RegisteredEmail)
             {
-                var random_char = otp_char[rnd.Next(1, otp_char.Length)];
-                OTP += random_char;
+                txtRecoverEmail.BorderColor = Color.FromArgb(0, 128, 0);
+                //OTP generator
+                string otp_char = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                OTP = "";
+                Random rnd = new Random();
+
+                for (int i = 0; i < 6; i++)
+                {
+                    var random_char = otp_char[rnd.Next(1, otp_char.Length)];
+                    OTP += random_char;
+
+                }
+
+                //initialize variables
+                string msg = OTP;
+                string senderEmail, senderPass, receiverEmail;
+                receiverEmail = txtRecoverEmail.Text;
+                senderEmail = "timy.villarmiaact2022@gmail.com";
+                senderPass = "phnvprgowvivrndk";  //Gmail's App Password
+
+
+                MimeMessage message = new MimeMessage(); // Creating object for Message
+                message.From.Add(new MailboxAddress("CS201DashBoard - OTP", senderEmail)); //Sender's information
+                message.To.Add(MailboxAddress.Parse(receiverEmail)); //Receiver's Information
+
+                message.Subject = "One-Time-Password"; //Email's Subject
+
+                //Email's Body
+                message.Body = new TextPart("plain") //Plain text
+                {
+                    Text = msg  //MSG = OTP
+                };
+
+                SmtpClient client = new SmtpClient(); // allows sending of e-mail notifications using a SMTP server
+
+                try
+                {
+                    client.Connect("smtp.gmail.com", 465, true); //Gmail's smtp server, PORT: 465
+                    client.Authenticate(senderEmail, senderPass); //Login sender's email and password
+                    client.Send(message); //
+                    MessageBox.Show("Kindly check your entered email address and Don't forget to check your SPAM folders");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message); //if errors display message
+                }
+                finally
+                {
+                    client.Disconnect(true); // always disconnect
+                    client.Dispose();
+                }
 
             }
-
-            //initialize variables
-            string msg = OTP;
-            string senderEmail, senderPass, receiverEmail;
-            receiverEmail = txtEmail.Text;
-            senderEmail = "timy.villarmiaact2022@gmail.com";
-            senderPass = "phnvprgowvivrndk";  //Gmail's App Password
-
-
-            MimeMessage message = new MimeMessage(); // Creating object for Message
-            message.From.Add(new MailboxAddress("CS201DashBoard - OTP", senderEmail)); //Sender's information
-            message.To.Add(MailboxAddress.Parse(receiverEmail)); //Receiver's Information
-
-            message.Subject = "One-Time-Password"; //Email's Subject
-
-            //Email's Body
-            message.Body = new TextPart("plain") //Plain text
+            else
             {
-                Text = msg  //MSG = OTP
-            };
-
-            SmtpClient client = new SmtpClient(); // allows sending of e-mail notifications using a SMTP server
-
-            try
-            {
-                client.Connect("smtp.gmail.com", 465, true); //Gmail's smtp server, PORT: 465
-                client.Authenticate(senderEmail, senderPass); //Login sender's email and password
-                client.Send(message); //
-                MessageBox.Show("Kindly check your entered email address and Don't forget to check your SPAM folders");
+                MessageBox.Show("Email is not registered");
+                txtRecoverEmail.BorderColor = Color.FromArgb(255, 0, 0);
             }
-            catch (Exception ex)
+
+            
+        }
+
+        private void toggleForgotPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (toggleForgotPass.Checked)
             {
-                MessageBox.Show(ex.Message); //if errors display message
+                txtNewPass.PasswordChar = '\0';
+                txtConfirmNewPass.PasswordChar = '\0';
             }
-            finally
+            else
             {
-                client.Disconnect(true); // always disconnect
-                client.Dispose();
+                txtNewPass.PasswordChar = '•';
+                txtConfirmNewPass.PasswordChar = '•';
             }
+        }
+
+        private void btnRecover_Click(object sender, EventArgs e)
+        {
+            if (txtRecoverEmail.Text != string.Empty && txtNewPass.Text != string.Empty && txtConfirmNewPass.Text != string.Empty && txtOTP.Text != string.Empty)
+            {
+                if (txtOTP.Text == OTP)
+                {
+                    if (txtNewPass.Text.Length < 8)
+                    {
+                        MessageBox.Show("Make sure your password is at least 8 characters");
+                    }
+                    else if (txtNewPass.Text != txtConfirmNewPass.Text)
+                    {
+                        MessageBox.Show("Make sure your password is identical");
+                    }
+                    else
+                    {
+                        RegisteredPassword = txtNewPass.Text;
+                        MessageBox.Show(RegisteredPassword);
+                        MessageBox.Show(OTP);
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Invalid OTP");
+                }
+
+             
+               
+            }
+            else
+            {
+                MessageBox.Show("Make sure you correctly fill up the form");
+            }
+
+            
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            RecoverEmail = txtRecoverEmail.Text;
+
+            if (txtRecoverEmail.Text != string.Empty)
+            {
+                txtRecoverEmail.BorderColor = Color.FromArgb(0, 128, 0);
+
+            }
+            else
+            {
+                txtRecoverEmail.BorderColor = Color.FromArgb(255, 0, 0);
+            }
+        }
+
+        private void txtOTP_TextChanged(object sender, EventArgs e)
+        {
+            if (txtOTP.Text != string.Empty)
+            {
+                txtOTP.BorderColor = Color.FromArgb(0, 128, 0);
+
+            }
+            else
+            {
+                txtOTP.BorderColor = Color.FromArgb(255, 0, 0);
+            }
+        }
+
+        private void txtNewPass_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNewPass.Text != string.Empty)
+            {
+                if (txtNewPass.Text.Length >= 8)
+                {
+                    txtNewPass.BorderColor = Color.FromArgb(0, 128, 0);
+                }
+                else
+                {
+                    txtNewPass.BorderColor = Color.FromArgb(255, 0, 0);
+
+                }
+            }
+            else
+            {
+                txtNewPass.BorderColor = Color.FromArgb(255, 0, 0);
+            }
+        }
+
+        private void txtConfirmNewPass_TextChanged(object sender, EventArgs e)
+        {
+            if (txtConfirmNewPass.Text != string.Empty)
+            {
+                if (txtNewPass.Text == txtConfirmNewPass.Text)
+                {
+                    txtConfirmNewPass.BorderColor = Color.FromArgb(0, 128, 0);
+                }
+                else
+                {
+                    txtConfirmNewPass.BorderColor = Color.FromArgb(255, 0, 0);
+                }
+
+            }
+            else
+            {
+                txtConfirmNewPass.BorderColor = Color.FromArgb(255, 0, 0);
+            }
+
+
+          
         }
     }
 }

@@ -199,7 +199,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-closed-eye-24.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Hinterrhein.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download.png" />
   </ItemGroup>
@@ -220,6 +222,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-facebook-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vorderrhein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mataura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual-life-3d-white-robot.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
