@@ -25,16 +25,14 @@ namespace Finals.UserControls
         public TeamUC()
         {
             InitializeComponent();
-
-
-            
         }
 
         bool picboxclick = true;
+        bool hoveranimation = true;
         string linklabel = "";
 
 
-
+        
 
         private void picbox1_Click(object sender, EventArgs e)
         {
@@ -139,6 +137,21 @@ namespace Finals.UserControls
             System.Diagnostics.Process.Start(linklabel);
         }
 
+        private void picbox1_MouseHover(object sender, EventArgs e)
+        {
+          
 
+            if (hoveranimation == true)
+            {
+                picbox1.BackColor = Color.Blue;
+                hoveranimation = false;
+            }
+            else
+            {
+           
+
+
+            }
+        }
     }
 }

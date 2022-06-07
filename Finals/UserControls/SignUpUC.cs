@@ -24,8 +24,10 @@ namespace Finals.UserControls
 
         }
 
-    
-
+        string registered_email = ""; 
+        string registered_username = ""; 
+        string registered_password = "";
+  
 
 
 
@@ -53,32 +55,26 @@ namespace Finals.UserControls
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtPassword.Text != txtConfirmPass.Text)
+            if (txtPassword.Text.Length >= 8) 
             {
-                txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                txtPassword.BorderColor = Color.FromArgb(0, 128, 0);
             }
             else
             {
-                txtConfirmPass.BorderColor = Color.FromArgb(0, 128, 0);
-                txtPassword.BorderColor = Color.FromArgb(0, 128, 0);
-
-
-
+                txtPassword.BorderColor = Color.FromArgb(255, 0, 0);
+                txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
             }
         }
 
         private void txtConfirmPass_TextChanged(object sender, EventArgs e)
         {
-            if (txtPassword.Text != txtConfirmPass.Text)
+            if (txtPassword.Text == txtConfirmPass.Text && txtPassword.Text.Length >= 8)
             {
-                txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                txtConfirmPass.BorderColor = Color.FromArgb(0, 128, 0);
             }
             else
             {
-                txtConfirmPass.BorderColor = Color.FromArgb(0, 128, 0);
-                txtPassword.BorderColor = Color.FromArgb(0, 128, 0);
-
-
+                txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
             }
         }
 
@@ -106,52 +102,56 @@ namespace Finals.UserControls
             {
                 txtUsername.BorderColor = Color.FromArgb(255, 0, 0);
             }
+
         }
 
-        private void btnSignUp_Click(object sender, EventArgs e)
+        public void btnSignUp_Click(object sender, EventArgs e)
         {
+         
 
-            if (txtPassword.Text != txtConfirmPass.Text)
+            if (txtEmail.Text != string.Empty && txtUsername.Text != string.Empty && txtPassword.Text != string.Empty && txtConfirmPass.Text != string.Empty && checkboxTerms.Checked != false)
             {
-                MessageBox.Show("Password are not identical");
-            }
-    
-            else if (txtEmail.Text == string.Empty && txtUsername.Text == string.Empty)
-            {
-                MessageBox.Show("Please complete the form");
-            }
-            else if (txtPassword.Text == string.Empty && txtConfirmPass.Text == string.Empty)
-            {
-                MessageBox.Show("Please complete the form");
-            }
-            else if (checkboxTerms.Checked == false)
-            {
-                MessageBox.Show("Please check the Terms and Privacy Policy");
+                if (txtPassword.Text.Length < 8)
+                {
+                    MessageBox.Show("Make sure your password is more than 8 characters");
+                }
+                else if (txtPassword.Text != txtConfirmPass.Text)
+                {
+                    MessageBox.Show("Make sure your password is identical");
+
+                }
+                else if (checkboxTerms.Checked == false)
+                {
+                    MessageBox.Show("Don't forget to check the Terms and Privacy Policy");
+
+                }
+                else
+                {
+  
+
+                    UserControls.SignUpUC.Instance.SendToBack();
+                    MessageBox.Show("Account successfully created, Please Sign In");
+
+                    registered_email = txtEmail.Text;
+                    registered_username = txtUsername.Text;
+                    registered_password = txtPassword.Text;
+                    
+
+                    MessageBox.Show(registered_email);
+
+                    txtEmail.Text = "";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtConfirmPass.Text = "";
+                    checkboxTerms.Checked = false;
+                }
             }
             else
             {
-                string writeEmail = txtEmail.Text;
-                string writeUsername = txtUsername.Text;
-                string writePassword = txtPassword.Text;
-
-                //StreamWriter sw = new StreamWriter("F:/Visual Studio 2020/repos/orig/1stYr-Finals/Finals/Accounts/Accounts.txt");
-
-                //sw.WriteLine("Email: " + writeEmail);
-                //sw.WriteLine("Username:" + writeUsername);
-                //sw.WriteLine("Password:" + writePassword);
-                //sw.Flush();
-                //sw.Close();
-
-                string writeText = "Hello World!";  
-                File.WriteAllText("filename.txt", writeText); 
-
-
-
-                UserControls.SignUpUC.Instance.SendToBack();
-                MessageBox.Show("Account successfully created, Please Sign In");
-
-
+                MessageBox.Show("Make sure you correctly fill up the form");
             }
+
+      
         }
     }
 

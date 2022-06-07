@@ -165,10 +165,12 @@
             this.picbox1.TabIndex = 16;
             this.picbox1.TabStop = false;
             this.picbox1.Click += new System.EventHandler(this.picbox1_Click);
+            this.picbox1.MouseHover += new System.EventHandler(this.picbox1_MouseHover);
             // 
             // picbox2
             // 
             this.picbox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbox2.FillColor = System.Drawing.Color.Black;
             this.picbox2.Image = global::Finals.Properties.Resources.download1;
             this.picbox2.ImageRotate = 0F;
             this.picbox2.Location = new System.Drawing.Point(250, 184);

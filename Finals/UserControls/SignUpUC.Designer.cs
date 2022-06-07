@@ -117,7 +117,7 @@
             this.lblAlt.BackColor = System.Drawing.Color.Transparent;
             this.lblAlt.Font = new System.Drawing.Font("Roboto", 12F);
             this.lblAlt.ForeColor = System.Drawing.Color.Gray;
-            this.lblAlt.Location = new System.Drawing.Point(36, 71);
+            this.lblAlt.Location = new System.Drawing.Point(41, 71);
             this.lblAlt.Name = "lblAlt";
             this.lblAlt.Size = new System.Drawing.Size(343, 58);
             this.lblAlt.TabIndex = 14;
@@ -128,7 +128,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Black", 28F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(41, 18);
+            this.label1.Location = new System.Drawing.Point(49, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(329, 46);
             this.label1.TabIndex = 13;
@@ -139,9 +139,9 @@
             this.checkboxTerms.AutoSize = true;
             this.checkboxTerms.Location = new System.Drawing.Point(49, 386);
             this.checkboxTerms.Name = "checkboxTerms";
-            this.checkboxTerms.Size = new System.Drawing.Size(222, 17);
+            this.checkboxTerms.Size = new System.Drawing.Size(219, 17);
             this.checkboxTerms.TabIndex = 10;
-            this.checkboxTerms.Text = "I agree to all the Term, and Privacy Policy";
+            this.checkboxTerms.Text = "I agree to all the Term and Privacy Policy";
             this.checkboxTerms.UseVisualStyleBackColor = true;
             // 
             // txtConfirmPass
