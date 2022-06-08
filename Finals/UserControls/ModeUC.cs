@@ -16,8 +16,6 @@ namespace Finals.UserControls
 {
     public partial class ModeUC : UserControl
     {
-
-
         private static ModeUC _instance;
         public static ModeUC Instance
         {
@@ -36,12 +34,8 @@ namespace Finals.UserControls
 
 
         }
-
-        
-
         private void SignInUC_Load(object sender, EventArgs e)
-        {
-
+        {     
         }
 
         public static string RegisteredUsername;

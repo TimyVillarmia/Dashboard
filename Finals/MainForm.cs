@@ -27,6 +27,7 @@ namespace Finals
 
         private void BtnHome_Click(object sender, EventArgs e)
         {
+            
             BtnHome.FillColor = Color.FromArgb(255, 110, 108);
             BtnHome.ForeColor = Color.White;
             BtnTeam.FillColor = Color.Transparent;
@@ -34,7 +35,7 @@ namespace Finals
             BtnProjects.FillColor = Color.Transparent;
             BtnProjects.ForeColor = Color.FromArgb(32, 22, 16);
 
-
+            
             UserControls.HomeUC HomePage = new UserControls.HomeUC();
             HomePanel.Controls.Add(HomePage);
             HomePage.BringToFront();

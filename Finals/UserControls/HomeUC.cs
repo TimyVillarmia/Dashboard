@@ -19,18 +19,12 @@ namespace Finals.UserControls
            
         }
 
-
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
-
-            if (!HomePanel.Controls.Contains(UserControls.ModeUC.Instance))
-            {
-                Controls.Add(UserControls.ModeUC.Instance);
-                UserControls.ModeUC.Instance.BringToFront();
-
-            }
-            else
-                UserControls.ModeUC.Instance.BringToFront();
+            Controls.Add(ModeUC.Instance);
+            ModeUC.Instance.BringToFront();
         }
+
+  
     }
 }
