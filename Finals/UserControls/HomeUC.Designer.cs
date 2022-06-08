@@ -32,10 +32,10 @@
             this.lblHeadline2 = new System.Windows.Forms.Label();
             this.picHeadline1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picMainimage = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.HomePanel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.HomePanel = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picHeadline1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMainimage)).BeginInit();
-            this.HomePanel1.SuspendLayout();
+            this.HomePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGetStarted
@@ -95,29 +95,29 @@
             this.picMainimage.TabIndex = 44;
             this.picMainimage.TabStop = false;
             // 
-            // HomePanel1
+            // HomePanel
             // 
-            this.HomePanel1.Controls.Add(this.picMainimage);
-            this.HomePanel1.Controls.Add(this.picHeadline1);
-            this.HomePanel1.Controls.Add(this.lblHeadline2);
-            this.HomePanel1.Controls.Add(this.btnGetStarted);
-            this.HomePanel1.Location = new System.Drawing.Point(0, 0);
-            this.HomePanel1.Name = "HomePanel1";
-            this.HomePanel1.Size = new System.Drawing.Size(1000, 700);
-            this.HomePanel1.TabIndex = 46;
+            this.HomePanel.Controls.Add(this.picMainimage);
+            this.HomePanel.Controls.Add(this.picHeadline1);
+            this.HomePanel.Controls.Add(this.lblHeadline2);
+            this.HomePanel.Controls.Add(this.btnGetStarted);
+            this.HomePanel.Location = new System.Drawing.Point(0, 0);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(1000, 700);
+            this.HomePanel.TabIndex = 46;
             // 
             // HomeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.HomePanel1);
+            this.Controls.Add(this.HomePanel);
             this.Name = "HomeUC";
             this.Size = new System.Drawing.Size(1000, 700);
             ((System.ComponentModel.ISupportInitialize)(this.picHeadline1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMainimage)).EndInit();
-            this.HomePanel1.ResumeLayout(false);
-            this.HomePanel1.PerformLayout();
+            this.HomePanel.ResumeLayout(false);
+            this.HomePanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -128,6 +128,6 @@
         private System.Windows.Forms.Label lblHeadline2;
         private Guna.UI2.WinForms.Guna2PictureBox picHeadline1;
         private Guna.UI2.WinForms.Guna2PictureBox picMainimage;
-        private Guna.UI2.WinForms.Guna2Panel HomePanel1;
+        private Guna.UI2.WinForms.Guna2Panel HomePanel;
     }
 }

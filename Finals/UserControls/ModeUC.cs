@@ -17,6 +17,7 @@ namespace Finals.UserControls
     public partial class ModeUC : UserControl
     {
 
+
         private static ModeUC _instance;
         public static ModeUC Instance
         {
@@ -32,8 +33,6 @@ namespace Finals.UserControls
         public ModeUC()
         {
             InitializeComponent();
-
-       
 
         }
 
@@ -153,6 +152,7 @@ namespace Finals.UserControls
                     ForgotPassPanel.Visible = false;
                     SignInPanel.Visible = true;
                     SignUpPanel.Visible = false;
+
 
                     ModeUC.Instance.SendToBack();
                 }
