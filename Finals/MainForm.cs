@@ -19,8 +19,7 @@ namespace Finals
         {
             InitializeComponent();
 
-            HomePanel.Controls.Add(UserControls.HomeUC.Instance);
-            UserControls.HomeUC.Instance.BringToFront();
+           
 
         }
     
@@ -37,18 +36,10 @@ namespace Finals
 
             UserControls.ModeUC.Instance.SendToBack();
 
-            if (!HomePanel.Controls.Contains(UserControls.HomeUC.Instance))
-            {
+            UserControls.HomeUC HomePage = new UserControls.HomeUC();
+            HomePanel.Controls.Add(HomePage);
+            HomePage.BringToFront();
 
-                HomePanel.Controls.Add(UserControls.HomeUC.Instance);
-                UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
-                UserControls.HomeUC.Instance.BringToFront();
-            }
-            else
-            {
-                UserControls.HomeUC.Instance.BringToFront();
-
-            }
 
 
         }
@@ -62,18 +53,10 @@ namespace Finals
             BtnProjects.FillColor = Color.Transparent;
             BtnProjects.ForeColor = Color.FromArgb(32, 22, 16);
 
-            if (!HomePanel.Controls.Contains(UserControls.TeamUC.Instance))
-            {
-                HomePanel.Controls.Add(UserControls.TeamUC.Instance);
-                UserControls.TeamUC.Instance.Dock = DockStyle.Fill;
+            UserControls.TeamUC TeamPage = new UserControls.TeamUC();
+            HomePanel.Controls.Add(TeamPage);
+            TeamPage.BringToFront();
 
-                UserControls.TeamUC.Instance.BringToFront();
-            }
-            else
-            {
-                UserControls.TeamUC.Instance.BringToFront();
-
-            }
         }
 
         private void BtnProducts_Click(object sender, EventArgs e)
@@ -85,29 +68,34 @@ namespace Finals
             BtnProjects.FillColor = Color.FromArgb(255, 110, 108);
             BtnProjects.ForeColor = Color.White;
 
+            UserControls.ProjectsUC ProjectsPage = new UserControls.ProjectsUC();
+            HomePanel.Controls.Add(ProjectsPage);
+            ProjectsPage.BringToFront();
 
-            if (!HomePanel.Controls.Contains(UserControls.ProjectsUC.Instance))
-            {
-                HomePanel.Controls.Add(UserControls.ProjectsUC.Instance);
-                UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
-                UserControls.ProjectsUC.Instance.BringToFront();
-            }
-            else
-            {
-                UserControls.ProjectsUC.Instance.BringToFront();
-            }
 
         }
 
         private void PicLogo_Click(object sender, EventArgs e)
         {
-            UserControls.HomeUC.Instance.BringToFront();
+            
 
 
         }
 
         private void BtnSIgnIn_Click(object sender, EventArgs e)
         {
+        }
+
+        private void HomePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            UserControls.HomeUC home = new UserControls.HomeUC();
+            HomePanel.Controls.Add(home);
+            home.BringToFront();
         }
     }
 }

@@ -12,16 +12,7 @@ namespace Finals.UserControls
 {
     public partial class ProjectsUC : UserControl
     {
-        private static ProjectsUC _instance;
-        public static ProjectsUC Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new ProjectsUC();
-                return _instance;
-            }
-        }
+  
         public ProjectsUC()
         {
             InitializeComponent();

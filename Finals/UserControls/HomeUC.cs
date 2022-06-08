@@ -12,16 +12,16 @@ namespace Finals.UserControls
 {
     public partial class HomeUC : UserControl
     {
-        private static HomeUC _instance;
-        public static HomeUC Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new HomeUC();
-                return _instance;
-            }
-        }
+        //private static HomeUC _instance;
+        //public static HomeUC Instance
+        //{
+        //    get
+        //    {
+        //        if (_instance == null)
+        //            _instance = new HomeUC();
+        //        return _instance;
+        //    }
+        //}
         public HomeUC()
         {
             InitializeComponent();

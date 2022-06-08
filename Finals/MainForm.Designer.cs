@@ -70,6 +70,7 @@
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(1000, 700);
             this.HomePanel.TabIndex = 25;
+            this.HomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HomePanel_Paint);
             // 
             // guna2ControlBox1
             // 
@@ -216,6 +217,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GradientPanel.ResumeLayout(false);
             this.GradientPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
