@@ -85,6 +85,12 @@
     <Reference Include="TelerikCommon, Version=2022.2.510.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD.Designer.cs">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="UserControls\TeamUC.Designer.cs">
       <DependentUpon>TeamUC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
