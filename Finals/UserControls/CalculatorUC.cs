@@ -12,16 +12,7 @@ namespace Finals.UserControls
 {
     public partial class CalculatorUC : UserControl
     {
-        private static CalculatorUC _instance;
-        public static CalculatorUC Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new CalculatorUC();
-                return _instance;
-            }
-        }
+   
         public CalculatorUC()
         {
             InitializeComponent();

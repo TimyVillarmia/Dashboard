@@ -13,16 +13,7 @@ namespace Finals.UserControls
     public partial class GroupProfileUC : UserControl
     {
 
-        private static GroupProfileUC _instance;
-        public static GroupProfileUC Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new GroupProfileUC();
-                return _instance;
-            }
-        }
+
         public GroupProfileUC()
         {
             InitializeComponent();

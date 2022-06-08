@@ -24,30 +24,16 @@ namespace Finals
 
         private void btnGroupProfile_Click_1(object sender, EventArgs e)
         {
-            if (!MainPanel.Controls.Contains(UserControls.GroupProfileUC.Instance))
-            {
-                MainPanel.Controls.Add(UserControls.GroupProfileUC.Instance);
-                UserControls.GroupProfileUC.Instance.Dock = DockStyle.Fill;
-                UserControls.GroupProfileUC.Instance.BringToFront();
-            }
-            else
-            {
-                UserControls.GroupProfileUC.Instance.BringToFront();
-            }
+            UserControls.GroupProfileUC GroupProfileForm = new UserControls.GroupProfileUC();
+            MainPanel.Controls.Add(GroupProfileForm);
+            GroupProfileForm.BringToFront();
         }
 
         private void btnCalculator_Click(object sender, EventArgs e)
         {
-            if (!MainPanel.Controls.Contains(UserControls.CalculatorUC.Instance))
-            {
-                MainPanel.Controls.Add(UserControls.CalculatorUC.Instance);
-                UserControls.CalculatorUC.Instance.Dock = DockStyle.Fill;
-                UserControls.CalculatorUC.Instance.BringToFront();
-            }
-            else
-            {
-                UserControls.CalculatorUC.Instance.BringToFront();
-            }
+            UserControls.CalculatorUC CalculatorForm = new UserControls.CalculatorUC();
+            MainPanel.Controls.Add(CalculatorForm);
+            CalculatorForm.BringToFront();
         }
     }
 }
