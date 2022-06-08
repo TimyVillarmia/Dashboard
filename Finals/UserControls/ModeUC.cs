@@ -34,15 +34,20 @@ namespace Finals.UserControls
         {
             InitializeComponent();
 
+
         }
+
+        
 
         private void SignInUC_Load(object sender, EventArgs e)
         {
 
         }
+
+        public static string RegisteredUsername;
+        public static bool ADMIN;
         string RecoverEmail;
         string RegisteredEmail;
-        string RegisteredUsername;
         string RegisteredPassword;
         string OTP;
 
@@ -97,6 +102,7 @@ namespace Finals.UserControls
             {
                 if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
                 {
+                    ADMIN = true;
                     MessageBox.Show("Login Successfully");
                     //MainForm HideMain = new MainForm();
                     //HideMain.Hide();
@@ -106,6 +112,7 @@ namespace Finals.UserControls
                 }
                 else if (txtUsername.Text == RegisteredUsername && txtPassword.Text == RegisteredPassword)
                 {
+                    ADMIN = false;
                     MessageBox.Show("Login Successfully");
                     var FormDashboard = new DASHBOARD();
                     FormDashboard.Show();

@@ -35,5 +35,17 @@ namespace Finals
             MainPanel.Controls.Add(CalculatorForm);
             CalculatorForm.BringToFront();
         }
+
+        private void DASHBOARD_Load(object sender, EventArgs e)
+        {
+             if (UserControls.ModeUC.ADMIN == true)
+            {
+                lblName.Text = "Admin";
+            }
+            else
+            {
+                lblName.Text = UserControls.ModeUC.RegisteredUsername;
+            }
+        }
     }
 }
