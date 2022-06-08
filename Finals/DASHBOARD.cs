@@ -35,5 +35,19 @@ namespace Finals
                 UserControls.GroupProfileUC.Instance.BringToFront();
             }
         }
+
+        private void btnCalculator_Click(object sender, EventArgs e)
+        {
+            if (!MainPanel.Controls.Contains(UserControls.CalculatorUC.Instance))
+            {
+                MainPanel.Controls.Add(UserControls.CalculatorUC.Instance);
+                UserControls.CalculatorUC.Instance.Dock = DockStyle.Fill;
+                UserControls.CalculatorUC.Instance.BringToFront();
+            }
+            else
+            {
+                UserControls.CalculatorUC.Instance.BringToFront();
+            }
+        }
     }
 }

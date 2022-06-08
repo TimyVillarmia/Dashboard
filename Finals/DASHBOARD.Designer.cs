@@ -34,12 +34,12 @@
             this.SideNav = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGroupProfile = new Guna.UI2.WinForms.Guna2Button();
             this.TopPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.btnCalculator = new Guna.UI2.WinForms.Guna2Button();
             this.btnConverter = new Guna.UI2.WinForms.Guna2Button();
             this.btnPictureBox = new Guna.UI2.WinForms.Guna2Button();
+            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SideNav.SuspendLayout();
             this.TopPanel.SuspendLayout();
@@ -72,11 +72,12 @@
             // 
             this.SideNav.BackColor = System.Drawing.Color.Transparent;
             this.SideNav.BorderColor = System.Drawing.Color.Black;
-            this.SideNav.BorderThickness = 1;
             this.SideNav.Controls.Add(this.btnPictureBox);
             this.SideNav.Controls.Add(this.btnConverter);
             this.SideNav.Controls.Add(this.btnCalculator);
             this.SideNav.Controls.Add(this.btnGroupProfile);
+            this.SideNav.CustomBorderColor = System.Drawing.Color.Black;
+            this.SideNav.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.SideNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideNav.Location = new System.Drawing.Point(0, 123);
             this.SideNav.Name = "SideNav";
@@ -114,18 +115,6 @@
             this.TopPanel.Size = new System.Drawing.Size(984, 123);
             this.TopPanel.TabIndex = 8;
             // 
-            // PicLogo
-            // 
-            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
-            this.PicLogo.ImageRotate = 0F;
-            this.PicLogo.Location = new System.Drawing.Point(59, 33);
-            this.PicLogo.Name = "PicLogo";
-            this.PicLogo.Size = new System.Drawing.Size(153, 61);
-            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PicLogo.TabIndex = 5;
-            this.PicLogo.TabStop = false;
-            // 
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.Transparent;
@@ -157,6 +146,7 @@
             this.btnCalculator.Size = new System.Drawing.Size(233, 67);
             this.btnCalculator.TabIndex = 12;
             this.btnCalculator.Text = "Calculator";
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
             // btnConverter
             // 
@@ -194,6 +184,18 @@
             this.btnPictureBox.Size = new System.Drawing.Size(233, 67);
             this.btnPictureBox.TabIndex = 14;
             this.btnPictureBox.Text = "Picture Box";
+            // 
+            // PicLogo
+            // 
+            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
+            this.PicLogo.ImageRotate = 0F;
+            this.PicLogo.Location = new System.Drawing.Point(59, 33);
+            this.PicLogo.Name = "PicLogo";
+            this.PicLogo.Size = new System.Drawing.Size(153, 61);
+            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicLogo.TabIndex = 5;
+            this.PicLogo.TabStop = false;
             // 
             // DASHBOARD
             // 

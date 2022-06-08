@@ -26,5 +26,11 @@ namespace Finals.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnDisplayForm_Click(object sender, EventArgs e)
+        {
+            var showCalculator = new Activity56_Group2_CS201.Calculator();
+            showCalculator.Show();
+        }
     }
 }

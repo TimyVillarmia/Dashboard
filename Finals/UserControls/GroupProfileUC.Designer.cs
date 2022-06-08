@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDisplayForm = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.FormPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
@@ -45,7 +47,7 @@
             this.Member2_txtbox = new System.Windows.Forms.TextBox();
             this.Leader_txtbox = new System.Windows.Forms.TextBox();
             this.Member1_txtbox = new System.Windows.Forms.TextBox();
-            this.btnDisplayForm = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1.SuspendLayout();
             this.FormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +62,31 @@
             this.label1.Size = new System.Drawing.Size(313, 58);
             this.label1.TabIndex = 1;
             this.label1.Text = "Group Profile";
+            // 
+            // btnDisplayForm
+            // 
+            this.btnDisplayForm.BorderRadius = 20;
+            this.btnDisplayForm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDisplayForm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDisplayForm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDisplayForm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDisplayForm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
+            this.btnDisplayForm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDisplayForm.ForeColor = System.Drawing.Color.White;
+            this.btnDisplayForm.Location = new System.Drawing.Point(409, 175);
+            this.btnDisplayForm.Name = "btnDisplayForm";
+            this.btnDisplayForm.Size = new System.Drawing.Size(193, 55);
+            this.btnDisplayForm.TabIndex = 3;
+            this.btnDisplayForm.Text = "Display Form";
+            this.btnDisplayForm.Click += new System.EventHandler(this.btnDisplayForm_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.FormPanel);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 52);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(400, 588);
+            this.guna2Panel1.TabIndex = 4;
             // 
             // FormPanel
             // 
@@ -80,10 +107,10 @@
             this.FormPanel.Controls.Add(this.Member2_txtbox);
             this.FormPanel.Controls.Add(this.Leader_txtbox);
             this.FormPanel.Controls.Add(this.Member1_txtbox);
-            this.FormPanel.Location = new System.Drawing.Point(27, 94);
+            this.FormPanel.Location = new System.Drawing.Point(7, 107);
             this.FormPanel.Name = "FormPanel";
             this.FormPanel.Size = new System.Drawing.Size(352, 434);
-            this.FormPanel.TabIndex = 2;
+            this.FormPanel.TabIndex = 3;
             // 
             // btnCancel
             // 
@@ -262,34 +289,18 @@
             this.Member1_txtbox.Size = new System.Drawing.Size(297, 27);
             this.Member1_txtbox.TabIndex = 22;
             // 
-            // btnDisplayForm
-            // 
-            this.btnDisplayForm.BorderRadius = 20;
-            this.btnDisplayForm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDisplayForm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDisplayForm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDisplayForm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDisplayForm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
-            this.btnDisplayForm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDisplayForm.ForeColor = System.Drawing.Color.White;
-            this.btnDisplayForm.Location = new System.Drawing.Point(409, 175);
-            this.btnDisplayForm.Name = "btnDisplayForm";
-            this.btnDisplayForm.Size = new System.Drawing.Size(193, 55);
-            this.btnDisplayForm.TabIndex = 3;
-            this.btnDisplayForm.Text = "Display Form";
-            this.btnDisplayForm.Click += new System.EventHandler(this.btnDisplayForm_Click);
-            // 
             // GroupProfileUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnDisplayForm);
-            this.Controls.Add(this.FormPanel);
             this.Controls.Add(this.label1);
             this.Name = "GroupProfileUC";
             this.Size = new System.Drawing.Size(751, 700);
             this.Load += new System.EventHandler(this.GroupProfileUC_Load);
+            this.guna2Panel1.ResumeLayout(false);
             this.FormPanel.ResumeLayout(false);
             this.FormPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -300,6 +311,8 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnDisplayForm;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel FormPanel;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnClear;
@@ -316,6 +329,5 @@
         private System.Windows.Forms.TextBox Member2_txtbox;
         private System.Windows.Forms.TextBox Leader_txtbox;
         private System.Windows.Forms.TextBox Member1_txtbox;
-        private Guna.UI2.WinForms.Guna2Button btnDisplayForm;
     }
 }
