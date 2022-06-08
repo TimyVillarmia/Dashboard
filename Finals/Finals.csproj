@@ -117,12 +117,6 @@
     <Compile Include="UserControls\CalculatorUC.Designer.cs">
       <DependentUpon>CalculatorUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ForgotPassUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ForgotPassUC.Designer.cs">
-      <DependentUpon>ForgotPassUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\GroupProfileUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,9 +172,6 @@
     </Compile>
     <EmbeddedResource Include="UserControls\CalculatorUC.resx">
       <DependentUpon>CalculatorUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ForgotPassUC.resx">
-      <DependentUpon>ForgotPassUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GroupProfileUC.resx">
       <DependentUpon>GroupProfileUC.cs</DependentUpon>
@@ -279,6 +270,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheloPhoto.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -33,7 +33,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
             this.panelMemberDesc = new Guna.UI2.WinForms.Guna2Panel();
-            this.picFBLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.linkFacebook = new System.Windows.Forms.LinkLabel();
             this.lblHeadline = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,14 +41,15 @@
             this.picbox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picbox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picbox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picFBLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelIntroduction.SuspendLayout();
             this.panelMemberDesc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFBLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFBLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelIntroduction
@@ -93,17 +93,6 @@
             this.panelMemberDesc.Name = "panelMemberDesc";
             this.panelMemberDesc.Size = new System.Drawing.Size(701, 181);
             this.panelMemberDesc.TabIndex = 12;
-            // 
-            // picFBLogo
-            // 
-            this.picFBLogo.Image = global::Finals.Properties.Resources.icons8_facebook_48;
-            this.picFBLogo.ImageRotate = 0F;
-            this.picFBLogo.Location = new System.Drawing.Point(4, 5);
-            this.picFBLogo.Name = "picFBLogo";
-            this.picFBLogo.Size = new System.Drawing.Size(48, 48);
-            this.picFBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picFBLogo.TabIndex = 21;
-            this.picFBLogo.TabStop = false;
             // 
             // linkFacebook
             // 
@@ -184,12 +173,12 @@
             // picbox3
             // 
             this.picbox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbox3.Image = global::Finals.Properties.Resources.business_3d_young_man_in_casual_clothes_sitting_on_the_floor_with_phone;
+            this.picbox3.Image = global::Finals.Properties.Resources.cheloPhoto;
             this.picbox3.ImageRotate = 0F;
             this.picbox3.Location = new System.Drawing.Point(500, 184);
             this.picbox3.Name = "picbox3";
             this.picbox3.Size = new System.Drawing.Size(250, 258);
-            this.picbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox3.TabIndex = 14;
             this.picbox3.TabStop = false;
             this.picbox3.Click += new System.EventHandler(this.picbox3_Click);
@@ -206,6 +195,17 @@
             this.picbox4.TabIndex = 13;
             this.picbox4.TabStop = false;
             this.picbox4.Click += new System.EventHandler(this.picbox4_Click);
+            // 
+            // picFBLogo
+            // 
+            this.picFBLogo.Image = global::Finals.Properties.Resources.icons8_facebook_48;
+            this.picFBLogo.ImageRotate = 0F;
+            this.picFBLogo.Location = new System.Drawing.Point(4, 5);
+            this.picFBLogo.Name = "picFBLogo";
+            this.picFBLogo.Size = new System.Drawing.Size(48, 48);
+            this.picFBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picFBLogo.TabIndex = 21;
+            this.picFBLogo.TabStop = false;
             // 
             // TeamUC
             // 
@@ -226,12 +226,12 @@
             this.panelIntroduction.PerformLayout();
             this.panelMemberDesc.ResumeLayout(false);
             this.panelMemberDesc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFBLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFBLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

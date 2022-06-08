@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnDisplayForm = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.FormPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +46,6 @@
             this.Member2_txtbox = new System.Windows.Forms.TextBox();
             this.Leader_txtbox = new System.Windows.Forms.TextBox();
             this.Member1_txtbox = new System.Windows.Forms.TextBox();
-            this.guna2Panel1.SuspendLayout();
             this.FormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,14 +78,6 @@
             this.btnDisplayForm.Text = "Display Form";
             this.btnDisplayForm.Click += new System.EventHandler(this.btnDisplayForm_Click);
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.FormPanel);
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 52);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(400, 588);
-            this.guna2Panel1.TabIndex = 4;
-            // 
             // FormPanel
             // 
             this.FormPanel.BackColor = System.Drawing.Color.White;
@@ -107,7 +97,7 @@
             this.FormPanel.Controls.Add(this.Member2_txtbox);
             this.FormPanel.Controls.Add(this.Leader_txtbox);
             this.FormPanel.Controls.Add(this.Member1_txtbox);
-            this.FormPanel.Location = new System.Drawing.Point(7, 107);
+            this.FormPanel.Location = new System.Drawing.Point(41, 94);
             this.FormPanel.Name = "FormPanel";
             this.FormPanel.Size = new System.Drawing.Size(352, 434);
             this.FormPanel.TabIndex = 3;
@@ -294,13 +284,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.FormPanel);
             this.Controls.Add(this.btnDisplayForm);
             this.Controls.Add(this.label1);
             this.Name = "GroupProfileUC";
             this.Size = new System.Drawing.Size(751, 700);
             this.Load += new System.EventHandler(this.GroupProfileUC_Load);
-            this.guna2Panel1.ResumeLayout(false);
             this.FormPanel.ResumeLayout(false);
             this.FormPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -312,7 +301,6 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnDisplayForm;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel FormPanel;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2Button btnClear;

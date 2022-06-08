@@ -30,7 +30,6 @@
         {
             this.btnDisplayForm = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.CalcPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.txtInput2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtInput1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,7 +43,6 @@
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnDivide = new Guna.UI2.WinForms.Guna2Button();
             this.btnPercent = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1.SuspendLayout();
             this.CalcPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,14 +74,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Calculator";
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.CalcPanel);
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 52);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(400, 588);
-            this.guna2Panel1.TabIndex = 6;
-            // 
             // CalcPanel
             // 
             this.CalcPanel.Controls.Add(this.txtInput2);
@@ -99,11 +89,11 @@
             this.CalcPanel.Controls.Add(this.btnDivide);
             this.CalcPanel.Controls.Add(this.btnPercent);
             this.CalcPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
-            this.CalcPanel.Location = new System.Drawing.Point(36, 76);
+            this.CalcPanel.Location = new System.Drawing.Point(98, 94);
             this.CalcPanel.Name = "CalcPanel";
             this.CalcPanel.ShadowDecoration.Depth = 50;
             this.CalcPanel.Size = new System.Drawing.Size(295, 436);
-            this.CalcPanel.TabIndex = 2;
+            this.CalcPanel.TabIndex = 6;
             // 
             // txtInput2
             // 
@@ -356,12 +346,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.CalcPanel);
             this.Controls.Add(this.btnDisplayForm);
             this.Controls.Add(this.label1);
             this.Name = "CalculatorUC";
             this.Size = new System.Drawing.Size(751, 700);
-            this.guna2Panel1.ResumeLayout(false);
             this.CalcPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -371,7 +360,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2Button btnDisplayForm;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel CalcPanel;
         private Guna.UI2.WinForms.Guna2TextBox txtInput2;
         private Guna.UI2.WinForms.Guna2TextBox txtInput1;

@@ -105,7 +105,7 @@ namespace Finals.UserControls
                     ADMIN = true;
                     MessageBox.Show("Login Successfully");
                     //MainForm HideMain = new MainForm();
-                    //HideMain.Hide();
+                    //HideMain.Visible = false;
                     DASHBOARD FormDashboard = new DASHBOARD();
                     FormDashboard.Show();
                     

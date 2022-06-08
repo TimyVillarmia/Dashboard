@@ -37,12 +37,12 @@
             this.btnCalculator = new Guna.UI2.WinForms.Guna2Button();
             this.btnGroupProfile = new Guna.UI2.WinForms.Guna2Button();
             this.TopPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.lblHello = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.lblHello = new System.Windows.Forms.Label();
+            this.drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SideNav.SuspendLayout();
             this.TopPanel.SuspendLayout();
@@ -69,7 +69,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(198)))), ((int)(((byte)(224)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(984, 761);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1000, 800);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
             // SideNav
@@ -85,7 +85,7 @@
             this.SideNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideNav.Location = new System.Drawing.Point(0, 123);
             this.SideNav.Name = "SideNav";
-            this.SideNav.Size = new System.Drawing.Size(233, 638);
+            this.SideNav.Size = new System.Drawing.Size(233, 677);
             this.SideNav.TabIndex = 9;
             // 
             // btnPictureBox
@@ -173,8 +173,21 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(984, 123);
+            this.TopPanel.Size = new System.Drawing.Size(1000, 123);
             this.TopPanel.TabIndex = 8;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(952, 3);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 25;
             // 
             // PicLogo
             // 
@@ -195,25 +208,8 @@
             this.MainPanel.Controls.Add(this.lblHello);
             this.MainPanel.Location = new System.Drawing.Point(233, 122);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(751, 700);
+            this.MainPanel.Size = new System.Drawing.Size(767, 700);
             this.MainPanel.TabIndex = 7;
-            // 
-            // drag
-            // 
-            this.drag.DockIndicatorTransparencyValue = 0.6D;
-            this.drag.TargetControl = this.TopPanel;
-            this.drag.UseTransparentDrag = true;
-            // 
-            // lblHello
-            // 
-            this.lblHello.AutoSize = true;
-            this.lblHello.Font = new System.Drawing.Font("Roboto Black", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
-            this.lblHello.Location = new System.Drawing.Point(38, 28);
-            this.lblHello.Name = "lblHello";
-            this.lblHello.Size = new System.Drawing.Size(218, 77);
-            this.lblHello.TabIndex = 0;
-            this.lblHello.Text = "Hello, ";
             // 
             // lblName
             // 
@@ -226,24 +222,28 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Username";
             // 
-            // guna2ControlBox1
+            // lblHello
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.Font = new System.Drawing.Font("Roboto Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ControlBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(936, 3);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 25;
+            this.lblHello.AutoSize = true;
+            this.lblHello.Font = new System.Drawing.Font("Roboto Black", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
+            this.lblHello.Location = new System.Drawing.Point(38, 28);
+            this.lblHello.Name = "lblHello";
+            this.lblHello.Size = new System.Drawing.Size(218, 77);
+            this.lblHello.TabIndex = 0;
+            this.lblHello.Text = "Hello, ";
+            // 
+            // drag
+            // 
+            this.drag.DockIndicatorTransparencyValue = 0.6D;
+            this.drag.TargetControl = this.TopPanel;
+            this.drag.UseTransparentDrag = true;
             // 
             // DASHBOARD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 761);
+            this.ClientSize = new System.Drawing.Size(1000, 800);
             this.ControlBox = false;
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
