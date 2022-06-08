@@ -193,19 +193,19 @@ namespace Finals.UserControls
         {
             if (txtRegisterPassword.Text != string.Empty)
             {
-                if (txtRegisterPassword.Text.Length < 8 && txtConfirmPass.Text.Length < 8)
-                {
-                    txtRegisterPassword.BorderColor = Color.FromArgb(255, 0, 0);
-                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
-                }
-                else if (txtRegisterPassword.Text != txtConfirmPass.Text)
-                {
-                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
-                }
-                else
+                if (txtRegisterPassword.Text.Length >= 8)
                 {
                     txtRegisterPassword.BorderColor = Color.FromArgb(0, 128, 0);
                 }
+                else
+                {
+                    txtRegisterPassword.BorderColor = Color.FromArgb(255, 0, 0);
+                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+
+                }
+
+
+
             }
             else
             {
@@ -217,19 +217,25 @@ namespace Finals.UserControls
         {
             if (txtConfirmPass.Text != string.Empty)
             {
-                if (txtRegisterPassword.Text.Length < 8 && txtConfirmPass.Text.Length < 8)
+                if (txtRegisterPassword.Text.Length >= 8)
                 {
-                    txtRegisterPassword.BorderColor = Color.FromArgb(255, 0, 0);
-                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
-                }
-                else if (txtRegisterPassword.Text != txtConfirmPass.Text)
-                {
-                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                    if (txtConfirmPass.Text == txtRegisterPassword.Text)
+                    {
+                        txtConfirmPass.BorderColor = Color.FromArgb(0, 128, 0);
+
+                    }
+                    else
+                    {
+                        txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+                    }
                 }
                 else
                 {
-                    txtRegisterPassword.BorderColor = Color.FromArgb(0, 128, 0);
-                }     
+                    txtConfirmPass.BorderColor = Color.FromArgb(255, 0, 0);
+
+                }
+              
+
             }
             else
             {
@@ -337,29 +343,37 @@ namespace Finals.UserControls
             {
                 if (txtOTP.Text == OTP)
                 {
-                    if (txtNewPass.Text.Length < 8)
+                    if (txtNewPass.Text == txtConfirmNewPass.Text)
                     {
-                        MessageBox.Show("Make sure your password is at least 8 characters");
-                    }
-                    else if (txtNewPass.Text != txtConfirmNewPass.Text)
-                    {
-                        MessageBox.Show("Make sure your password is identical");
+                        if (txtNewPass.Text.Length >= 8)
+                        {
+                            RegisteredPassword = txtNewPass.Text;
+                            MessageBox.Show("Account recovered successfully");
+                            ForgotPassPanel.Visible = false;
+                            SignInPanel.Visible = true;
+                            SignUpPanel.Visible = false;
+
+                            txtNewPass.Text = "";
+                            txtOTP.Text = "";
+                            txtNewPass.Text = "";
+                            txtConfirmNewPass.Text = "";
+
+                        }     
+                        else
+                        {
+                            MessageBox.Show("Make sure your password is at least 8 characters");
+                        }
                     }
                     else
                     {
-                        RegisteredPassword = txtNewPass.Text;
-                        MessageBox.Show(RegisteredPassword);
-                        MessageBox.Show(OTP);
+                        MessageBox.Show("Password are not identical");
                     }
 
                 }
                 else
                 {
                     MessageBox.Show("Invalid OTP");
-                }
-
-             
-               
+                }   
             }
             else
             {
@@ -389,7 +403,15 @@ namespace Finals.UserControls
         {
             if (txtOTP.Text != string.Empty)
             {
-                txtOTP.BorderColor = Color.FromArgb(0, 128, 0);
+                if(txtOTP.Text == OTP)
+                {
+                    txtOTP.BorderColor = Color.FromArgb(0, 128, 0);
+                }
+                else
+                {
+                    txtOTP.BorderColor = Color.FromArgb(255, 0, 0);
+                    MessageBox.Show("Make sure you entered the correct OTP");
+                }
 
             }
             else
@@ -422,14 +444,22 @@ namespace Finals.UserControls
         {
             if (txtConfirmNewPass.Text != string.Empty)
             {
-                if (txtNewPass.Text == txtConfirmNewPass.Text)
+                if (txtNewPass.Text.Length >= 8)
                 {
-                    txtConfirmNewPass.BorderColor = Color.FromArgb(0, 128, 0);
+                    if (txtNewPass.Text == txtConfirmNewPass.Text)
+                    {
+                        txtConfirmNewPass.BorderColor = Color.FromArgb(0, 128, 0);
+                    }
+                    else
+                    {
+                        txtConfirmNewPass.BorderColor = Color.FromArgb(255, 0, 0);
+                    }
                 }
                 else
                 {
                     txtConfirmNewPass.BorderColor = Color.FromArgb(255, 0, 0);
                 }
+
 
             }
             else
@@ -438,7 +468,6 @@ namespace Finals.UserControls
             }
 
 
-          
         }
     }
 }
