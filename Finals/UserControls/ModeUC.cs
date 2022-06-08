@@ -99,10 +99,17 @@ namespace Finals.UserControls
                 if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
                 {
                     MessageBox.Show("Login Successfully");
+                    //MainForm HideMain = new MainForm();
+                    //HideMain.Hide();
+                    DASHBOARD FormDashboard = new DASHBOARD();
+                    FormDashboard.Show();
+                    
                 }
                 else if (txtUsername.Text == RegisteredUsername && txtPassword.Text == RegisteredPassword)
                 {
                     MessageBox.Show("Login Successfully");
+                    var FormDashboard = new DASHBOARD();
+                    FormDashboard.Show();
                 }
                 else
                 {

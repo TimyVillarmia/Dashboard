@@ -31,12 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.SideNav = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnGroupProfile = new Guna.UI2.WinForms.Guna2Button();
+            this.TopPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.btnCalculator = new Guna.UI2.WinForms.Guna2Button();
+            this.btnConverter = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPictureBox = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.SideNav.SuspendLayout();
+            this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +56,7 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.SideNav);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Panel1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.TopPanel);
             this.guna2CustomGradientPanel1.Controls.Add(this.MainPanel);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
@@ -62,32 +68,51 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(984, 761);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
-            // MainPanel
-            // 
-            this.MainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.MainPanel.Location = new System.Drawing.Point(233, 122);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(751, 700);
-            this.MainPanel.TabIndex = 7;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.PicLogo);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(984, 123);
-            this.guna2Panel1.TabIndex = 8;
-            // 
             // SideNav
             // 
             this.SideNav.BackColor = System.Drawing.Color.Transparent;
+            this.SideNav.BorderColor = System.Drawing.Color.Black;
+            this.SideNav.BorderThickness = 1;
+            this.SideNav.Controls.Add(this.btnPictureBox);
+            this.SideNav.Controls.Add(this.btnConverter);
+            this.SideNav.Controls.Add(this.btnCalculator);
+            this.SideNav.Controls.Add(this.btnGroupProfile);
             this.SideNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideNav.Location = new System.Drawing.Point(0, 123);
             this.SideNav.Name = "SideNav";
             this.SideNav.Size = new System.Drawing.Size(233, 638);
             this.SideNav.TabIndex = 9;
+            // 
+            // btnGroupProfile
+            // 
+            this.btnGroupProfile.CustomBorderColor = System.Drawing.Color.Black;
+            this.btnGroupProfile.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnGroupProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGroupProfile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGroupProfile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGroupProfile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGroupProfile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGroupProfile.FillColor = System.Drawing.Color.Transparent;
+            this.btnGroupProfile.Font = new System.Drawing.Font("Roboto", 15.75F);
+            this.btnGroupProfile.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupProfile.Location = new System.Drawing.Point(0, 0);
+            this.btnGroupProfile.Name = "btnGroupProfile";
+            this.btnGroupProfile.Size = new System.Drawing.Size(233, 67);
+            this.btnGroupProfile.TabIndex = 11;
+            this.btnGroupProfile.Text = "Group Profile";
+            this.btnGroupProfile.Click += new System.EventHandler(this.btnGroupProfile_Click_1);
+            // 
+            // TopPanel
+            // 
+            this.TopPanel.BackColor = System.Drawing.Color.Transparent;
+            this.TopPanel.BorderColor = System.Drawing.Color.Black;
+            this.TopPanel.BorderThickness = 1;
+            this.TopPanel.Controls.Add(this.PicLogo);
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(984, 123);
+            this.TopPanel.TabIndex = 8;
             // 
             // PicLogo
             // 
@@ -101,6 +126,75 @@
             this.PicLogo.TabIndex = 5;
             this.PicLogo.TabStop = false;
             // 
+            // MainPanel
+            // 
+            this.MainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.MainPanel.Location = new System.Drawing.Point(233, 122);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(751, 700);
+            this.MainPanel.TabIndex = 7;
+            // 
+            // drag
+            // 
+            this.drag.DockIndicatorTransparencyValue = 0.6D;
+            this.drag.TargetControl = this.TopPanel;
+            this.drag.UseTransparentDrag = true;
+            // 
+            // btnCalculator
+            // 
+            this.btnCalculator.CustomBorderColor = System.Drawing.Color.Black;
+            this.btnCalculator.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnCalculator.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCalculator.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCalculator.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCalculator.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCalculator.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCalculator.FillColor = System.Drawing.Color.Transparent;
+            this.btnCalculator.Font = new System.Drawing.Font("Roboto", 15.75F);
+            this.btnCalculator.ForeColor = System.Drawing.Color.Black;
+            this.btnCalculator.Location = new System.Drawing.Point(0, 67);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Size = new System.Drawing.Size(233, 67);
+            this.btnCalculator.TabIndex = 12;
+            this.btnCalculator.Text = "Calculator";
+            // 
+            // btnConverter
+            // 
+            this.btnConverter.BackColor = System.Drawing.Color.Transparent;
+            this.btnConverter.CustomBorderColor = System.Drawing.Color.Black;
+            this.btnConverter.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnConverter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConverter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConverter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConverter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConverter.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConverter.FillColor = System.Drawing.Color.Transparent;
+            this.btnConverter.Font = new System.Drawing.Font("Roboto", 15.75F);
+            this.btnConverter.ForeColor = System.Drawing.Color.Black;
+            this.btnConverter.Location = new System.Drawing.Point(0, 134);
+            this.btnConverter.Name = "btnConverter";
+            this.btnConverter.Size = new System.Drawing.Size(233, 67);
+            this.btnConverter.TabIndex = 13;
+            this.btnConverter.Text = "Converter";
+            // 
+            // btnPictureBox
+            // 
+            this.btnPictureBox.CustomBorderColor = System.Drawing.Color.Black;
+            this.btnPictureBox.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnPictureBox.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPictureBox.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPictureBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPictureBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPictureBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPictureBox.FillColor = System.Drawing.Color.Transparent;
+            this.btnPictureBox.Font = new System.Drawing.Font("Roboto", 15.75F);
+            this.btnPictureBox.ForeColor = System.Drawing.Color.Black;
+            this.btnPictureBox.Location = new System.Drawing.Point(0, 201);
+            this.btnPictureBox.Name = "btnPictureBox";
+            this.btnPictureBox.Size = new System.Drawing.Size(233, 67);
+            this.btnPictureBox.TabIndex = 14;
+            this.btnPictureBox.Text = "Picture Box";
+            // 
             // DASHBOARD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,7 +206,8 @@
             this.Name = "DASHBOARD";
             this.Text = "DASHBOARD";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
+            this.SideNav.ResumeLayout(false);
+            this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -124,7 +219,12 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2Panel MainPanel;
         private Guna.UI2.WinForms.Guna2Panel SideNav;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel TopPanel;
         private Guna.UI2.WinForms.Guna2PictureBox PicLogo;
+        private Guna.UI2.WinForms.Guna2DragControl drag;
+        private Guna.UI2.WinForms.Guna2Button btnGroupProfile;
+        private Guna.UI2.WinForms.Guna2Button btnPictureBox;
+        private Guna.UI2.WinForms.Guna2Button btnConverter;
+        private Guna.UI2.WinForms.Guna2Button btnCalculator;
     }
 }

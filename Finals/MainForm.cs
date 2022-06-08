@@ -12,7 +12,7 @@ namespace Finals
 {
     public partial class MainForm : Form
     {
-        
+
 
 
         public MainForm()
