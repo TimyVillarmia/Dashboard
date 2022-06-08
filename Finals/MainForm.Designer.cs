@@ -32,14 +32,14 @@
             this.GradientPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.HomePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.BtnProducts = new Guna.UI2.WinForms.Guna2TileButton();
+            this.BtnProjects = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnTeam = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnHome = new Guna.UI2.WinForms.Guna2TileButton();
+            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblLogoname = new Guna.UI2.WinForms.Guna2TextBox();
             this.BorderlessForm = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.PicLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.GradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // 
             this.GradientPanel.Controls.Add(this.HomePanel);
             this.GradientPanel.Controls.Add(this.guna2ControlBox1);
-            this.GradientPanel.Controls.Add(this.BtnProducts);
+            this.GradientPanel.Controls.Add(this.BtnProjects);
             this.GradientPanel.Controls.Add(this.BtnTeam);
             this.GradientPanel.Controls.Add(this.BtnHome);
             this.GradientPanel.Controls.Add(this.PicLogo);
@@ -84,29 +84,29 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 24;
             // 
-            // BtnProducts
+            // BtnProjects
             // 
-            this.BtnProducts.BackColor = System.Drawing.Color.Transparent;
-            this.BtnProducts.BorderRadius = 16;
-            this.BtnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnProducts.DefaultAutoSize = true;
-            this.BtnProducts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnProducts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnProducts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnProducts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnProducts.FillColor = System.Drawing.Color.Transparent;
-            this.BtnProducts.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
-            this.BtnProducts.Font = new System.Drawing.Font("Roboto Black", 15.75F, System.Drawing.FontStyle.Bold);
-            this.BtnProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
-            this.BtnProducts.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
-            this.BtnProducts.HoverState.ForeColor = System.Drawing.Color.White;
-            this.BtnProducts.Location = new System.Drawing.Point(802, 47);
-            this.BtnProducts.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnProducts.Name = "BtnProducts";
-            this.BtnProducts.Size = new System.Drawing.Size(145, 37);
-            this.BtnProducts.TabIndex = 22;
-            this.BtnProducts.Text = "PRODUCTS";
-            this.BtnProducts.Click += new System.EventHandler(this.BtnProducts_Click);
+            this.BtnProjects.BackColor = System.Drawing.Color.Transparent;
+            this.BtnProjects.BorderRadius = 16;
+            this.BtnProjects.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnProjects.DefaultAutoSize = true;
+            this.BtnProjects.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnProjects.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnProjects.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnProjects.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnProjects.FillColor = System.Drawing.Color.Transparent;
+            this.BtnProjects.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
+            this.BtnProjects.Font = new System.Drawing.Font("Roboto Black", 15.75F, System.Drawing.FontStyle.Bold);
+            this.BtnProjects.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
+            this.BtnProjects.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
+            this.BtnProjects.HoverState.ForeColor = System.Drawing.Color.White;
+            this.BtnProjects.Location = new System.Drawing.Point(802, 47);
+            this.BtnProjects.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnProjects.Name = "BtnProjects";
+            this.BtnProjects.Size = new System.Drawing.Size(141, 37);
+            this.BtnProjects.TabIndex = 22;
+            this.BtnProjects.Text = "PROJECTS";
+            this.BtnProjects.Click += new System.EventHandler(this.BtnProducts_Click);
             // 
             // BtnTeam
             // 
@@ -155,6 +155,19 @@
             this.BtnHome.Text = "HOME";
             this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
+            // PicLogo
+            // 
+            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
+            this.PicLogo.ImageRotate = 0F;
+            this.PicLogo.Location = new System.Drawing.Point(59, 33);
+            this.PicLogo.Name = "PicLogo";
+            this.PicLogo.Size = new System.Drawing.Size(153, 61);
+            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicLogo.TabIndex = 4;
+            this.PicLogo.TabStop = false;
+            this.PicLogo.Click += new System.EventHandler(this.PicLogo_Click);
+            // 
             // lblLogoname
             // 
             this.lblLogoname.BackColor = System.Drawing.Color.Transparent;
@@ -194,19 +207,6 @@
             this.guna2DragControl2.TargetControl = this.HomePanel;
             this.guna2DragControl2.UseTransparentDrag = true;
             // 
-            // PicLogo
-            // 
-            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PicLogo.Image = global::Finals.Properties.Resources.LOGO;
-            this.PicLogo.ImageRotate = 0F;
-            this.PicLogo.Location = new System.Drawing.Point(59, 33);
-            this.PicLogo.Name = "PicLogo";
-            this.PicLogo.Size = new System.Drawing.Size(153, 61);
-            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PicLogo.TabIndex = 4;
-            this.PicLogo.TabStop = false;
-            this.PicLogo.Click += new System.EventHandler(this.PicLogo_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,7 +226,7 @@
         #endregion
         private Guna.UI2.WinForms.Guna2CustomGradientPanel GradientPanel;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2TileButton BtnProducts;
+        private Guna.UI2.WinForms.Guna2TileButton BtnProjects;
         private Guna.UI2.WinForms.Guna2TileButton BtnTeam;
         private Guna.UI2.WinForms.Guna2TileButton BtnHome;
         private Guna.UI2.WinForms.Guna2PictureBox PicLogo;

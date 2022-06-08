@@ -1,6 +1,6 @@
 ﻿namespace Finals.UserControls
 {
-    partial class ProductUC
+    partial class ProjectsUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,17 +37,17 @@
             this.label1.Font = new System.Drawing.Font("Roboto Black", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(318, 292);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 77);
+            this.label1.Size = new System.Drawing.Size(354, 77);
             this.label1.TabIndex = 1;
-            this.label1.Text = "PRODUCT";
+            this.label1.Text = "PROJECTS";
             // 
-            // ProductUC
+            // ProjectsUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.label1);
-            this.Name = "ProductUC";
+            this.Name = "ProjectsUC";
             this.Size = new System.Drawing.Size(1000, 700);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,8 +32,8 @@ namespace Finals
             BtnHome.ForeColor = Color.White;
             BtnTeam.FillColor = Color.Transparent;
             BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
-            BtnProducts.FillColor = Color.Transparent;
-            BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnProjects.FillColor = Color.Transparent;
+            BtnProjects.ForeColor = Color.FromArgb(32, 22, 16);
 
             UserControls.ModeUC.Instance.SendToBack();
 
@@ -59,8 +59,8 @@ namespace Finals
             BtnHome.ForeColor = Color.FromArgb(32, 22, 16);
             BtnTeam.FillColor = Color.FromArgb(255, 110, 108);
             BtnTeam.ForeColor = Color.White;
-            BtnProducts.FillColor = Color.Transparent;
-            BtnProducts.ForeColor = Color.FromArgb(32, 22, 16);
+            BtnProjects.FillColor = Color.Transparent;
+            BtnProjects.ForeColor = Color.FromArgb(32, 22, 16);
 
             if (!HomePanel.Controls.Contains(UserControls.TeamUC.Instance))
             {
@@ -82,19 +82,19 @@ namespace Finals
             BtnHome.ForeColor = Color.FromArgb(32, 22, 16);
             BtnTeam.FillColor = Color.Transparent;
             BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
-            BtnProducts.FillColor = Color.FromArgb(255, 110, 108);
-            BtnProducts.ForeColor = Color.White;
+            BtnProjects.FillColor = Color.FromArgb(255, 110, 108);
+            BtnProjects.ForeColor = Color.White;
 
 
-            if (!HomePanel.Controls.Contains(UserControls.ProductUC.Instance))
+            if (!HomePanel.Controls.Contains(UserControls.ProjectsUC.Instance))
             {
-                HomePanel.Controls.Add(UserControls.ProductUC.Instance);
+                HomePanel.Controls.Add(UserControls.ProjectsUC.Instance);
                 UserControls.HomeUC.Instance.Dock = DockStyle.Fill;
-                UserControls.ProductUC.Instance.BringToFront();
+                UserControls.ProjectsUC.Instance.BringToFront();
             }
             else
             {
-                UserControls.ProductUC.Instance.BringToFront();
+                UserControls.ProjectsUC.Instance.BringToFront();
             }
 
         }

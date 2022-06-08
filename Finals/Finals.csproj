@@ -105,11 +105,11 @@
     <Compile Include="UserControls\HomeUC.Designer.cs">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ProductUC.cs">
+    <Compile Include="UserControls\ProjectsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ProductUC.Designer.cs">
-      <DependentUpon>ProductUC.cs</DependentUpon>
+    <Compile Include="UserControls\ProjectsUC.Designer.cs">
+      <DependentUpon>ProjectsUC.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ModeUC.cs">
       <SubType>UserControl</SubType>
@@ -143,8 +143,8 @@
     <EmbeddedResource Include="UserControls\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ProductUC.resx">
-      <DependentUpon>ProductUC.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\ProjectsUC.resx">
+      <DependentUpon>ProjectsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ModeUC.resx">
       <DependentUpon>ModeUC.cs</DependentUpon>

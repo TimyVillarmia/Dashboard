@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Finals.UserControls
 {
-    public partial class ProductUC : UserControl
+    public partial class ProjectsUC : UserControl
     {
-        private static ProductUC _instance;
-        public static ProductUC Instance
+        private static ProjectsUC _instance;
+        public static ProjectsUC Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new ProductUC();
+                    _instance = new ProjectsUC();
                 return _instance;
             }
         }
-        public ProductUC()
+        public ProjectsUC()
         {
             InitializeComponent();
         }
