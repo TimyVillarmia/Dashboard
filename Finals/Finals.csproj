@@ -129,6 +129,12 @@
     <Compile Include="UserControls\CalculatorUC.Designer.cs">
       <DependentUpon>CalculatorUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ConverterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ConverterUC.Designer.cs">
+      <DependentUpon>ConverterUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\GroupProfileUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="UserControls\HomeUC.Designer.cs">
       <DependentUpon>HomeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PictureBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PictureBoxUC.Designer.cs">
+      <DependentUpon>PictureBoxUC.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ProjectsUC.cs">
       <SubType>UserControl</SubType>
@@ -191,11 +203,17 @@
     <EmbeddedResource Include="UserControls\CalculatorUC.resx">
       <DependentUpon>CalculatorUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ConverterUC.resx">
+      <DependentUpon>ConverterUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GroupProfileUC.resx">
       <DependentUpon>GroupProfileUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PictureBoxUC.resx">
+      <DependentUpon>PictureBoxUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProjectsUC.resx">
       <DependentUpon>ProjectsUC.cs</DependentUpon>
@@ -298,10 +316,15 @@
     <None Include="Resources\img3.png" />
     <None Include="Resources\img2.png" />
     <None Include="Resources\img1.png" />
+    <None Include="Resources\gp3.png" />
+    <None Include="Resources\calc1.png" />
+    <None Include="Resources\convert.png" />
     <Content Include="Resources\JPY.png" />
     <None Include="Resources\USD1.png" />
     <None Include="Resources\PHP1.png" />
     <None Include="Resources\JPY1.png" />
+    <None Include="Resources\pb.png" />
+    <None Include="Resources\pb1.png" />
     <Content Include="Resources\PHP.png" />
     <Content Include="Resources\USD.png" />
   </ItemGroup>

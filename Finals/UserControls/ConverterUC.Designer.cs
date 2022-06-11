@@ -1,6 +1,6 @@
 ﻿namespace Finals.UserControls
 {
-    partial class CalculatorUC
+    partial class ConverterUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.btnDisplayForm = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDisplayForm
@@ -44,10 +44,10 @@
             this.btnDisplayForm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(108)))));
             this.btnDisplayForm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDisplayForm.ForeColor = System.Drawing.Color.White;
-            this.btnDisplayForm.Location = new System.Drawing.Point(260, 155);
+            this.btnDisplayForm.Location = new System.Drawing.Point(287, 155);
             this.btnDisplayForm.Name = "btnDisplayForm";
             this.btnDisplayForm.Size = new System.Drawing.Size(193, 55);
-            this.btnDisplayForm.TabIndex = 5;
+            this.btnDisplayForm.TabIndex = 7;
             this.btnDisplayForm.Text = "Display Form";
             this.btnDisplayForm.Click += new System.EventHandler(this.btnDisplayForm_Click);
             // 
@@ -56,46 +56,47 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
-            this.label1.Location = new System.Drawing.Point(237, 94);
+            this.label1.Location = new System.Drawing.Point(264, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 58);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Calculator";
+            this.label1.Size = new System.Drawing.Size(241, 58);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Converter";
             // 
-            // guna2PictureBox2
+            // guna2PictureBox3
             // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.BorderRadius = 18;
-            this.guna2PictureBox2.CustomizableEdges.BottomRight = false;
-            this.guna2PictureBox2.CustomizableEdges.TopRight = false;
-            this.guna2PictureBox2.Image = global::Finals.Properties.Resources.calc;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(202, 216);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(314, 456);
-            this.guna2PictureBox2.TabIndex = 27;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.BorderRadius = 18;
+            this.guna2PictureBox3.CustomizableEdges.BottomRight = false;
+            this.guna2PictureBox3.CustomizableEdges.TopRight = false;
+            this.guna2PictureBox3.Image = global::Finals.Properties.Resources.convert;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(147, 216);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(477, 367);
+            this.guna2PictureBox3.TabIndex = 8;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
             // 
-            // CalculatorUC
+            // ConverterUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.btnDisplayForm);
             this.Controls.Add(this.label1);
-            this.Name = "CalculatorUC";
+            this.Name = "ConverterUC";
             this.Size = new System.Drawing.Size(751, 700);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
         private Guna.UI2.WinForms.Guna2Button btnDisplayForm;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
     }
 }
