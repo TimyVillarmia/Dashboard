@@ -81,7 +81,7 @@
             this.SideNav.Controls.Add(this.btnCalculator);
             this.SideNav.Controls.Add(this.btnGroupProfile);
             this.SideNav.CustomBorderColor = System.Drawing.Color.Black;
-            this.SideNav.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.SideNav.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 1, 0);
             this.SideNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideNav.Location = new System.Drawing.Point(0, 123);
             this.SideNav.Name = "SideNav";
@@ -105,6 +105,7 @@
             this.btnPictureBox.Size = new System.Drawing.Size(233, 67);
             this.btnPictureBox.TabIndex = 14;
             this.btnPictureBox.Text = "Picture Box";
+            this.btnPictureBox.Click += new System.EventHandler(this.btnPictureBox_Click);
             // 
             // btnConverter
             // 
@@ -124,6 +125,7 @@
             this.btnConverter.Size = new System.Drawing.Size(233, 67);
             this.btnConverter.TabIndex = 13;
             this.btnConverter.Text = "Converter";
+            this.btnConverter.Click += new System.EventHandler(this.btnConverter_Click);
             // 
             // btnCalculator
             // 
@@ -167,9 +169,9 @@
             // 
             this.TopPanel.BackColor = System.Drawing.Color.Transparent;
             this.TopPanel.BorderColor = System.Drawing.Color.Black;
-            this.TopPanel.BorderThickness = 1;
             this.TopPanel.Controls.Add(this.guna2ControlBox1);
             this.TopPanel.Controls.Add(this.PicLogo);
+            this.TopPanel.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
@@ -204,11 +206,14 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.MainPanel.BorderColor = System.Drawing.Color.Black;
             this.MainPanel.Controls.Add(this.lblName);
             this.MainPanel.Controls.Add(this.lblHello);
-            this.MainPanel.Location = new System.Drawing.Point(233, 122);
+            this.MainPanel.CustomBorderColor = System.Drawing.Color.Black;
+            this.MainPanel.CustomBorderThickness = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.MainPanel.Location = new System.Drawing.Point(233, 123);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(767, 700);
+            this.MainPanel.Size = new System.Drawing.Size(767, 699);
             this.MainPanel.TabIndex = 7;
             // 
             // lblName

@@ -18,5 +18,6 @@ namespace Finals
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
         }
+
     }
 }

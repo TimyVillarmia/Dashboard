@@ -70,7 +70,6 @@
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(1000, 700);
             this.HomePanel.TabIndex = 25;
-            this.HomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HomePanel_Paint);
             // 
             // guna2ControlBox1
             // 
@@ -167,7 +166,6 @@
             this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PicLogo.TabIndex = 4;
             this.PicLogo.TabStop = false;
-            this.PicLogo.Click += new System.EventHandler(this.PicLogo_Click);
             // 
             // lblLogoname
             // 

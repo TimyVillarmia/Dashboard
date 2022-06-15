@@ -12,9 +12,6 @@ namespace Finals
 {
     public partial class MainForm : Form
     {
-
-
-
         public MainForm()
         {
             InitializeComponent();
@@ -75,28 +72,17 @@ namespace Finals
 
         }
 
-        private void PicLogo_Click(object sender, EventArgs e)
-        {
-            
-
-
-        }
-
-        private void BtnSIgnIn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void HomePanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             UserControls.HomeUC home = new UserControls.HomeUC();
             HomePanel.Controls.Add(home);
             home.BringToFront();
+
         }
+
+
+
+
     }
 }
 

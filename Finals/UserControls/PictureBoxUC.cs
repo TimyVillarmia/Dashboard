@@ -16,5 +16,11 @@ namespace Finals.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnDisplayForm_Click(object sender, EventArgs e)
+        {
+            var showPictureBox = new Activity910_Group2_CS201.PictureBox();
+            showPictureBox.Show();
+        }
     }
 }

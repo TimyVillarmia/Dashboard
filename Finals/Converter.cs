@@ -123,13 +123,13 @@ namespace Activity78_Group2_CS201
             switch (select)
             {
                 case 0: 
-                    picCountry2.Image = Image.FromFile(@"F:\Visual Studio 2020\repos\Activity78_Group2_CS201\Activity78_Group2_CS201\Images\PHP.png");
+                    picCountry2.Image = Image.FromFile(@"Images\PHP.png");
                     break;
                 case 1:
-                    picCountry2.Image = Image.FromFile(@"F:\Visual Studio 2020\repos\Activity78_Group2_CS201\Activity78_Group2_CS201\Images\JPY.png");
+                    picCountry2.Image = Image.FromFile(@"Images\JPY.png");
                     break;
                 case 2:
-                    picCountry2.Image = Image.FromFile(@"F:\Visual Studio 2020\repos\Activity78_Group2_CS201\Activity78_Group2_CS201\Images\USD.png");
+                    picCountry2.Image = Image.FromFile(@"Images\USD.png");
                     break;
             }
         }

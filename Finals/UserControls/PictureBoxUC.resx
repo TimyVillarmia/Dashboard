@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Description : It is an application that displays 5 images in Picture Box control.  
+
+The application performs the following actions : 
+
+When the user clicks the first image , the application displays a message box with a message "One". 
+When the user clicks the second image , the application displays a message box with a message "Two".
+When the user clicks the third image , the application displays a message box with a message "Three".
+When the user clicks the fourth image , the application displays a message box with a message "Four".
+When the user clicks the fifth image , the application displays a message box with a message "Five".</value>
+  </data>
 </root>

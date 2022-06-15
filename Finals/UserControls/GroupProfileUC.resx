@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Description : 
+
+It is a form that accepts the following data entries : 
+
+Group Number
+Section
+Name of the Leader
+Name of the Group Members
+
+
+It shows the Leader's Name alongside with their group.  When you click the combo box and select the group 2 and section CS201, the application automatically shows the leader's name and its members</value>
+  </data>
 </root>

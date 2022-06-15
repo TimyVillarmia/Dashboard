@@ -38,7 +38,8 @@ namespace Finals
 
         private void DASHBOARD_Load(object sender, EventArgs e)
         {
-             if (UserControls.ModeUC.ADMIN == true)
+
+            if (UserControls.ModeUC.ADMIN == true)
             {
                 lblName.Text = "Admin";
             }
@@ -46,6 +47,20 @@ namespace Finals
             {
                 lblName.Text = UserControls.ModeUC.RegisteredUsername;
             }
+        }
+
+        private void btnConverter_Click(object sender, EventArgs e)
+        {
+            UserControls.ConverterUC ConverterForm = new UserControls.ConverterUC();
+            MainPanel.Controls.Add(ConverterForm);
+            ConverterForm.BringToFront();
+        }
+
+        private void btnPictureBox_Click(object sender, EventArgs e)
+        {
+            UserControls.PictureBoxUC PictureBoxForm = new UserControls.PictureBoxUC();
+            MainPanel.Controls.Add(PictureBoxForm);
+            PictureBoxForm.BringToFront();
         }
     }
 }

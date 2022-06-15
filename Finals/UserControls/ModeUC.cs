@@ -86,8 +86,7 @@ namespace Finals.UserControls
             }
         }
 
-     
-
+       
         private void btnSignIn_Click(object sender, EventArgs e)
         {
   
@@ -98,18 +97,20 @@ namespace Finals.UserControls
                 {
                     ADMIN = true;
                     MessageBox.Show("Login Successfully");
-                    //MainForm HideMain = new MainForm();
-                    //HideMain.Visible = false;
-                    DASHBOARD FormDashboard = new DASHBOARD();
-                    FormDashboard.Show();
-                    
+                    ParentForm.Hide();
+                    DASHBOARD dashboard = new DASHBOARD();
+                    dashboard.ShowDialog();
+                    ParentForm.Close();
+       
                 }
                 else if (txtUsername.Text == RegisteredUsername && txtPassword.Text == RegisteredPassword)
                 {
                     ADMIN = false;
                     MessageBox.Show("Login Successfully");
-                    var FormDashboard = new DASHBOARD();
-                    FormDashboard.Show();
+                    ParentForm.Hide();
+                    DASHBOARD dashboard = new DASHBOARD();
+                    dashboard.ShowDialog();
+                    ParentForm.Close();
                 }
                 else
                 {
