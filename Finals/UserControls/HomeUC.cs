@@ -19,12 +19,13 @@ namespace Finals.UserControls
            
         }
 
+
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
             Controls.Add(ModeUC.Instance);
             ModeUC.Instance.BringToFront();
         }
 
-  
+ 
     }
 }

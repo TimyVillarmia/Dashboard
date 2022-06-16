@@ -35,7 +35,8 @@ namespace Finals.UserControls
 
         }
         private void SignInUC_Load(object sender, EventArgs e)
-        {     
+        {
+
         }
 
         public static string RegisteredUsername;

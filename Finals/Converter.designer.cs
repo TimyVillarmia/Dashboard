@@ -37,19 +37,19 @@
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnConvert = new Guna.UI2.WinForms.Guna2Button();
+            this.picCountry2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.comboCurrency2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.picCountry1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.comboCurrency1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtInput1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.TopPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
             this.lblCurrencyConverter = new System.Windows.Forms.Label();
             this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
-            this.picCountry2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picCountry1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCountry2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCountry1)).BeginInit();
+            this.TopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -171,6 +171,19 @@
             this.btnConvert.Text = "Convert";
             this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
+            // picCountry2
+            // 
+            this.picCountry2.BackColor = System.Drawing.Color.Transparent;
+            this.picCountry2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picCountry2.FillColor = System.Drawing.Color.Transparent;
+            this.picCountry2.Image = global::Finals.Properties.Resources.JPY;
+            this.picCountry2.ImageRotate = 0F;
+            this.picCountry2.Location = new System.Drawing.Point(29, 174);
+            this.picCountry2.Name = "picCountry2";
+            this.picCountry2.Size = new System.Drawing.Size(48, 48);
+            this.picCountry2.TabIndex = 9;
+            this.picCountry2.TabStop = false;
+            // 
             // comboCurrency2
             // 
             this.comboCurrency2.BackColor = System.Drawing.Color.Transparent;
@@ -179,7 +192,7 @@
             this.comboCurrency2.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.comboCurrency2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboCurrency2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboCurrency2.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCurrency2.Font = new System.Drawing.Font("Roboto", 9.75F);
             this.comboCurrency2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboCurrency2.ItemHeight = 30;
             this.comboCurrency2.Location = new System.Drawing.Point(83, 181);
@@ -187,6 +200,19 @@
             this.comboCurrency2.Size = new System.Drawing.Size(79, 36);
             this.comboCurrency2.TabIndex = 8;
             this.comboCurrency2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            // 
+            // picCountry1
+            // 
+            this.picCountry1.BackColor = System.Drawing.Color.Transparent;
+            this.picCountry1.FillColor = System.Drawing.Color.Transparent;
+            this.picCountry1.Image = global::Finals.Properties.Resources.PHP;
+            this.picCountry1.ImageRotate = 0F;
+            this.picCountry1.Location = new System.Drawing.Point(25, 91);
+            this.picCountry1.Name = "picCountry1";
+            this.picCountry1.Size = new System.Drawing.Size(48, 48);
+            this.picCountry1.TabIndex = 5;
+            this.picCountry1.TabStop = false;
+            this.picCountry1.BackgroundImageChanged += new System.EventHandler(this.picCountry_BackgroundImageChanged);
             // 
             // comboCurrency1
             // 
@@ -196,7 +222,7 @@
             this.comboCurrency1.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.comboCurrency1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboCurrency1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboCurrency1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCurrency1.Font = new System.Drawing.Font("Roboto", 9.75F);
             this.comboCurrency1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboCurrency1.ItemHeight = 30;
             this.comboCurrency1.Location = new System.Drawing.Point(79, 98);
@@ -251,52 +277,6 @@
             this.TopPanel.Size = new System.Drawing.Size(449, 49);
             this.TopPanel.TabIndex = 0;
             // 
-            // lblCurrencyConverter
-            // 
-            this.lblCurrencyConverter.AutoSize = true;
-            this.lblCurrencyConverter.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrencyConverter.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrencyConverter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCurrencyConverter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCurrencyConverter.Location = new System.Drawing.Point(11, 8);
-            this.lblCurrencyConverter.Name = "lblCurrencyConverter";
-            this.lblCurrencyConverter.Size = new System.Drawing.Size(220, 29);
-            this.lblCurrencyConverter.TabIndex = 1;
-            this.lblCurrencyConverter.Text = "Currency Converter";
-            // 
-            // guna2ColorTransition1
-            // 
-            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Blue,
-        System.Drawing.Color.Orange};
-            // 
-            // picCountry2
-            // 
-            this.picCountry2.BackColor = System.Drawing.Color.Transparent;
-            this.picCountry2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picCountry2.FillColor = System.Drawing.Color.Transparent;
-            this.picCountry2.Image = global::Finals.Properties.Resources.JPY;
-            this.picCountry2.ImageRotate = 0F;
-            this.picCountry2.Location = new System.Drawing.Point(29, 174);
-            this.picCountry2.Name = "picCountry2";
-            this.picCountry2.Size = new System.Drawing.Size(48, 48);
-            this.picCountry2.TabIndex = 9;
-            this.picCountry2.TabStop = false;
-            // 
-            // picCountry1
-            // 
-            this.picCountry1.BackColor = System.Drawing.Color.Transparent;
-            this.picCountry1.FillColor = System.Drawing.Color.Transparent;
-            this.picCountry1.Image = global::Finals.Properties.Resources.PHP;
-            this.picCountry1.ImageRotate = 0F;
-            this.picCountry1.Location = new System.Drawing.Point(25, 91);
-            this.picCountry1.Name = "picCountry1";
-            this.picCountry1.Size = new System.Drawing.Size(48, 48);
-            this.picCountry1.TabIndex = 5;
-            this.picCountry1.TabStop = false;
-            this.picCountry1.BackgroundImageChanged += new System.EventHandler(this.picCountry_BackgroundImageChanged);
-            // 
             // btnSettings
             // 
             this.btnSettings.BackColor = System.Drawing.Color.Transparent;
@@ -320,6 +300,26 @@
             this.btnSettings.Text = "guna2Button1";
             this.btnSettings.UseTransparentBackground = true;
             // 
+            // lblCurrencyConverter
+            // 
+            this.lblCurrencyConverter.AutoSize = true;
+            this.lblCurrencyConverter.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurrencyConverter.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrencyConverter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCurrencyConverter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCurrencyConverter.Location = new System.Drawing.Point(11, 8);
+            this.lblCurrencyConverter.Name = "lblCurrencyConverter";
+            this.lblCurrencyConverter.Size = new System.Drawing.Size(220, 29);
+            this.lblCurrencyConverter.TabIndex = 1;
+            this.lblCurrencyConverter.Text = "Currency Converter";
+            // 
+            // guna2ColorTransition1
+            // 
+            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue,
+        System.Drawing.Color.Orange};
+            // 
             // CurrencyConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,10 +331,10 @@
             this.Text = "CurrencyConverter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.TopPanel.ResumeLayout(false);
-            this.TopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCountry2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCountry1)).EndInit();
+            this.TopPanel.ResumeLayout(false);
+            this.TopPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

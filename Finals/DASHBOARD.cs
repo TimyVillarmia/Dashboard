@@ -17,46 +17,43 @@ namespace Finals
             InitializeComponent();
         }
 
-        private void btnGroupProfile_Click(object sender, EventArgs e)
+        private void DASHBOARD_Load(object sender, EventArgs e)
         {
-            
+            UserControls.DashboardHome dashboardhome = new UserControls.DashboardHome();
+            MainPanel.Controls.Add(dashboardhome);
+            dashboardhome.BringToFront();
         }
 
-        private void btnGroupProfile_Click_1(object sender, EventArgs e)
+  
+        public void btnDashboard_Click(object sender, EventArgs e)
+        {
+            UserControls.DashboardHome dashboardhome = new UserControls.DashboardHome();
+            MainPanel.Controls.Add(dashboardhome);
+            dashboardhome.BringToFront();
+        }
+
+        public void btnGroupProfile_Click_2(object sender, EventArgs e)
         {
             UserControls.GroupProfileUC GroupProfileForm = new UserControls.GroupProfileUC();
             MainPanel.Controls.Add(GroupProfileForm);
             GroupProfileForm.BringToFront();
         }
 
-        private void btnCalculator_Click(object sender, EventArgs e)
+        public void btnCalculator_Click_1(object sender, EventArgs e)
         {
             UserControls.CalculatorUC CalculatorForm = new UserControls.CalculatorUC();
             MainPanel.Controls.Add(CalculatorForm);
             CalculatorForm.BringToFront();
         }
 
-        private void DASHBOARD_Load(object sender, EventArgs e)
-        {
-
-            if (UserControls.ModeUC.ADMIN == true)
-            {
-                lblName.Text = "Admin";
-            }
-            else
-            {
-                lblName.Text = UserControls.ModeUC.RegisteredUsername;
-            }
-        }
-
-        private void btnConverter_Click(object sender, EventArgs e)
+        public void btnConverter_Click_1(object sender, EventArgs e)
         {
             UserControls.ConverterUC ConverterForm = new UserControls.ConverterUC();
             MainPanel.Controls.Add(ConverterForm);
             ConverterForm.BringToFront();
         }
 
-        private void btnPictureBox_Click(object sender, EventArgs e)
+        public void btnPictureBox_Click_1(object sender, EventArgs e)
         {
             UserControls.PictureBoxUC PictureBoxForm = new UserControls.PictureBoxUC();
             MainPanel.Controls.Add(PictureBoxForm);

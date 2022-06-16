@@ -86,13 +86,13 @@ namespace Activity78_Group2_CS201
             switch (select)
             {
                 case 0:
-                    picCountry1.Image = Image.FromFile(@"Images\PHP.png");
+                    picCountry1.Image = Finals.Properties.Resources.PHP;
                     break;
                 case 1:
-                    picCountry1.Image = Image.FromFile(@"Images\JPY.png");
+                    picCountry1.Image = Finals.Properties.Resources.JPY; 
                     break;
                 case 2:
-                    picCountry1.Image = Image.FromFile(@"Images\USD.png");
+                    picCountry1.Image = Finals.Properties.Resources.USD;
                     break;
             }
         }
@@ -123,13 +123,13 @@ namespace Activity78_Group2_CS201
             switch (select)
             {
                 case 0: 
-                    picCountry2.Image = Image.FromFile(@"Images\PHP.png");
+                    picCountry2.Image = Finals.Properties.Resources.PHP;
                     break;
                 case 1:
-                    picCountry2.Image = Image.FromFile(@"Images\JPY.png");
+                    picCountry2.Image = Finals.Properties.Resources.JPY;
                     break;
                 case 2:
-                    picCountry2.Image = Image.FromFile(@"Images\USD.png");
+                    picCountry2.Image = Finals.Properties.Resources.USD;
                     break;
             }
         }
