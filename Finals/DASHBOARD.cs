@@ -19,6 +19,10 @@ namespace Finals
 
         private void DASHBOARD_Load(object sender, EventArgs e)
         {
+            btnDashboard.FillColor = Color.FromArgb(255, 110, 108);
+            btnDashboard.ForeColor = Color.White;
+
+
             UserControls.DashboardHome dashboardhome = new UserControls.DashboardHome();
             MainPanel.Controls.Add(dashboardhome);
             dashboardhome.BringToFront();
@@ -27,6 +31,17 @@ namespace Finals
   
         public void btnDashboard_Click(object sender, EventArgs e)
         {
+            btnDashboard.FillColor = Color.FromArgb(255, 110, 108);
+            btnDashboard.ForeColor = Color.White;
+            btnGroupProfile.FillColor = Color.Transparent;
+            btnGroupProfile.ForeColor = Color.FromArgb(32, 22, 16);
+            btnCalculator.FillColor = Color.Transparent;
+            btnCalculator.ForeColor = Color.FromArgb(32, 22, 16);
+            btnConverter.FillColor = Color.Transparent;
+            btnConverter.ForeColor = Color.FromArgb(32, 22, 16);
+            btnPictureBox.FillColor = Color.Transparent;
+            btnPictureBox.ForeColor = Color.FromArgb(32, 22, 16);
+
             UserControls.DashboardHome dashboardhome = new UserControls.DashboardHome();
             MainPanel.Controls.Add(dashboardhome);
             dashboardhome.BringToFront();
@@ -34,6 +49,18 @@ namespace Finals
 
         public void btnGroupProfile_Click_2(object sender, EventArgs e)
         {
+            btnDashboard.FillColor = Color.Transparent;
+            btnDashboard.ForeColor = Color.FromArgb(32, 22, 16);
+            btnGroupProfile.FillColor = Color.FromArgb(255, 110, 108);
+            btnGroupProfile.ForeColor = Color.White;
+            btnCalculator.FillColor = Color.Transparent;
+            btnCalculator.ForeColor = Color.FromArgb(32, 22, 16);
+            btnConverter.FillColor = Color.Transparent;
+            btnConverter.ForeColor = Color.FromArgb(32, 22, 16);
+            btnPictureBox.FillColor = Color.Transparent;
+            btnPictureBox.ForeColor = Color.FromArgb(32, 22, 16);
+
+
             UserControls.GroupProfileUC GroupProfileForm = new UserControls.GroupProfileUC();
             MainPanel.Controls.Add(GroupProfileForm);
             GroupProfileForm.BringToFront();
@@ -41,6 +68,18 @@ namespace Finals
 
         public void btnCalculator_Click_1(object sender, EventArgs e)
         {
+            btnDashboard.FillColor = Color.Transparent;
+            btnDashboard.ForeColor = Color.FromArgb(32, 22, 16);
+            btnGroupProfile.FillColor = Color.Transparent;
+            btnGroupProfile.ForeColor = Color.FromArgb(32, 22, 16);
+            btnCalculator.FillColor = Color.FromArgb(255, 110, 108);
+            btnCalculator.ForeColor = Color.White;
+            btnConverter.FillColor = Color.Transparent;
+            btnConverter.ForeColor = Color.FromArgb(32, 22, 16);
+            btnPictureBox.FillColor = Color.Transparent;
+            btnPictureBox.ForeColor = Color.FromArgb(32, 22, 16);
+
+
             UserControls.CalculatorUC CalculatorForm = new UserControls.CalculatorUC();
             MainPanel.Controls.Add(CalculatorForm);
             CalculatorForm.BringToFront();
@@ -48,6 +87,17 @@ namespace Finals
 
         public void btnConverter_Click_1(object sender, EventArgs e)
         {
+            btnDashboard.FillColor = Color.Transparent;
+            btnDashboard.ForeColor = Color.FromArgb(32, 22, 16);
+            btnGroupProfile.FillColor = Color.Transparent;
+            btnGroupProfile.ForeColor = Color.FromArgb(32, 22, 16);
+            btnCalculator.FillColor = Color.Transparent;
+            btnCalculator.ForeColor = Color.FromArgb(32, 22, 16);
+            btnConverter.FillColor = Color.FromArgb(255, 110, 108);
+            btnConverter.ForeColor = Color.White;
+            btnPictureBox.FillColor = Color.Transparent;
+            btnPictureBox.ForeColor = Color.FromArgb(32, 22, 16);
+
             UserControls.ConverterUC ConverterForm = new UserControls.ConverterUC();
             MainPanel.Controls.Add(ConverterForm);
             ConverterForm.BringToFront();
@@ -55,9 +105,28 @@ namespace Finals
 
         public void btnPictureBox_Click_1(object sender, EventArgs e)
         {
+            btnDashboard.FillColor = Color.Transparent;
+            btnDashboard.ForeColor = Color.FromArgb(32, 22, 16);
+            btnGroupProfile.FillColor = Color.Transparent;
+            btnGroupProfile.ForeColor = Color.FromArgb(32, 22, 16);
+            btnCalculator.FillColor = Color.Transparent;
+            btnCalculator.ForeColor = Color.FromArgb(32, 22, 16);
+            btnConverter.FillColor = Color.Transparent;
+            btnConverter.ForeColor = Color.FromArgb(32, 22, 16);
+            btnPictureBox.FillColor = Color.FromArgb(255, 110, 108);
+            btnPictureBox.ForeColor = Color.White;
+
             UserControls.PictureBoxUC PictureBoxForm = new UserControls.PictureBoxUC();
             MainPanel.Controls.Add(PictureBoxForm);
             PictureBoxForm.BringToFront();
+        }
+
+        private void linkLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            MainForm mainForm = new MainForm();
+            mainForm.ShowDialog();
+            this.Close();
         }
     }
 }

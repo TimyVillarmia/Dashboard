@@ -65,7 +65,6 @@
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.BorderRadius = 18;
             this.guna2PictureBox3.CustomizableEdges.BottomRight = false;
             this.guna2PictureBox3.CustomizableEdges.TopRight = false;
             this.guna2PictureBox3.Image = global::Finals.Properties.Resources.convert;

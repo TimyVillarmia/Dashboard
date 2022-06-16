@@ -88,6 +88,7 @@
             // 
             this.BtnProjects.BackColor = System.Drawing.Color.Transparent;
             this.BtnProjects.BorderRadius = 16;
+            this.BtnProjects.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.BtnProjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnProjects.DefaultAutoSize = true;
             this.BtnProjects.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -112,6 +113,7 @@
             // 
             this.BtnTeam.BackColor = System.Drawing.Color.Transparent;
             this.BtnTeam.BorderRadius = 16;
+            this.BtnTeam.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.BtnTeam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnTeam.DefaultAutoSize = true;
             this.BtnTeam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -136,6 +138,7 @@
             // 
             this.BtnHome.BackColor = System.Drawing.Color.Transparent;
             this.BtnHome.BorderRadius = 16;
+            this.BtnHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.BtnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnHome.DefaultAutoSize = true;
             this.BtnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

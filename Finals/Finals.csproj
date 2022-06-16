@@ -328,6 +328,8 @@
     <None Include="Resources\gp3.png" />
     <None Include="Resources\calc1.png" />
     <None Include="Resources\convert.png" />
+    <None Include="Resources\icons8-logout-48.png" />
+    <None Include="Resources\icons8-logout-24.png" />
     <Content Include="Resources\JPY.png" />
     <None Include="Resources\pb.png" />
     <None Include="Resources\pb1.png" />

@@ -57,7 +57,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(22)))), ((int)(((byte)(16)))));
-            this.label1.Location = new System.Drawing.Point(29, 63);
+            this.label1.Location = new System.Drawing.Point(29, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(688, 58);
             this.label1.TabIndex = 4;
@@ -66,7 +66,6 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.BorderRadius = 18;
             this.guna2PictureBox2.CustomizableEdges.BottomRight = false;
             this.guna2PictureBox2.CustomizableEdges.TopRight = false;
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;

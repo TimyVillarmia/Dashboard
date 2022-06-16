@@ -97,6 +97,8 @@ namespace Finals.UserControls
                 if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
                 {
                     ADMIN = true;
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
                     MessageBox.Show("Login Successfully");
                     ParentForm.Hide();
                     DASHBOARD dashboard = new DASHBOARD();
@@ -107,6 +109,8 @@ namespace Finals.UserControls
                 else if (txtUsername.Text == RegisteredUsername && txtPassword.Text == RegisteredPassword)
                 {
                     ADMIN = false;
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
                     MessageBox.Show("Login Successfully");
                     ParentForm.Hide();
                     DASHBOARD dashboard = new DASHBOARD();

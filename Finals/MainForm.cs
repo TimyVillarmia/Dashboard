@@ -31,7 +31,7 @@ namespace Finals
             BtnTeam.ForeColor = Color.FromArgb(32, 22, 16);
             BtnProjects.FillColor = Color.Transparent;
             BtnProjects.ForeColor = Color.FromArgb(32, 22, 16);
-            
+
             UserControls.HomeUC HomePage = new UserControls.HomeUC();
             HomePanel.Controls.Add(HomePage);
             HomePage.BringToFront();
