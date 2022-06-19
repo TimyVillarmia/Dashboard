@@ -53,7 +53,6 @@ namespace Finals.UserControls
                 lblGender.Text = string.Empty;
                 lblBirthday.Text = string.Empty;
                 lblPhone.Text = string.Empty;
-
             }
 
 
