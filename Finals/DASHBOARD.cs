@@ -18,23 +18,16 @@ namespace Finals
 
         }
 
-    
+
         public void DASHBOARD_Load(object sender, EventArgs e)
         {
 
             btnDashboard.FillColor = Color.FromArgb(255, 110, 108);
             btnDashboard.ForeColor = Color.White;
 
-            if (!MainPanel.Controls.Contains(UserControls.DashboardHome.Instance))
-            {
-                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
-                MainPanel.Controls.Add(dashhome);
-            }
-            else
-            {
-                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
-                MainPanel.Controls.Add(dashhome);
-            }
+            UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+            MainPanel.Controls.Add(dashhome);
+
         }
 
 
@@ -52,16 +45,22 @@ namespace Finals
             btnPictureBox.ForeColor = Color.FromArgb(32, 22, 16);
 
 
-            if (!MainPanel.Controls.Contains(UserControls.DashboardHome.Instance))
+            UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+
+            if (!MainPanel.Controls.Contains(dashhome))
             {
-                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+
                 MainPanel.Controls.Add(dashhome);
+                dashhome.BringToFront();
+
+
             }
             else
-            {
-                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
-                MainPanel.Controls.Add(dashhome);
+            { 
+                dashhome.BringToFront();
+
             }
+
 
 
 
