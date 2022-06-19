@@ -2,7 +2,7 @@
 
 # CS201 Dashboard
 
-**CS201 Dashboard** is a modern-like design Windowms Forms Application develop in C# and .NET Framework, which compiles all the other projects including Group Profile, Calculator, Currency Converter, and Clickable Image. 
+**CS201 Dashboard** is a modern-like design Windows Forms Application develop in C# and .NET Framework, which compiles all the other projects including Group Profile, Calculator, Currency Converter, and Clickable Image. 
 
 Its main features are:
  - Login
