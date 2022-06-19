@@ -330,6 +330,11 @@
     <None Include="Resources\convert.png" />
     <None Include="Resources\icons8-logout-48.png" />
     <None Include="Resources\icons8-logout-24.png" />
+    <None Include="Resources\287767805_425556909206976_1577626148675636249_n.jpg" />
+    <None Include="Resources\287767805_425556909206976_1577626148675636249_n1.jpg" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\camera.png" />
     <Content Include="Resources\JPY.png" />
     <None Include="Resources\pb.png" />
     <None Include="Resources\pb1.png" />

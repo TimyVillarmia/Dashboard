@@ -42,6 +42,7 @@
             this.picbox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picbox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picFBLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelIntroduction.SuspendLayout();
             this.panelMemberDesc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbox5)).BeginInit();
@@ -50,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picbox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFBLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelIntroduction
@@ -132,12 +134,12 @@
             // picbox5
             // 
             this.picbox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbox5.Image = global::Finals.Properties.Resources.casual_life_3d_young_man_using_laptop_and_talking_on_the_phone;
+            this.picbox5.Image = global::Finals.Properties.Resources._287767805_425556909206976_1577626148675636249_n1;
             this.picbox5.ImageRotate = 0F;
             this.picbox5.Location = new System.Drawing.Point(0, 442);
             this.picbox5.Name = "picbox5";
             this.picbox5.Size = new System.Drawing.Size(250, 258);
-            this.picbox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox5.TabIndex = 17;
             this.picbox5.TabStop = false;
             this.picbox5.Click += new System.EventHandler(this.picbox5_Click);
@@ -186,12 +188,12 @@
             // picbox4
             // 
             this.picbox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picbox4.Image = global::Finals.Properties.Resources.business_3d_young_woman_high_five_with_dog_in_sweater;
+            this.picbox4.Image = global::Finals.Properties.Resources._287767805_425556909206976_1577626148675636249_n;
             this.picbox4.ImageRotate = 0F;
             this.picbox4.Location = new System.Drawing.Point(750, 184);
             this.picbox4.Name = "picbox4";
             this.picbox4.Size = new System.Drawing.Size(250, 258);
-            this.picbox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbox4.TabIndex = 13;
             this.picbox4.TabStop = false;
             this.picbox4.Click += new System.EventHandler(this.picbox4_Click);
@@ -207,6 +209,20 @@
             this.picFBLogo.TabIndex = 21;
             this.picFBLogo.TabStop = false;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2PictureBox1.Image = global::Finals.Properties.Resources.download1;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(253, 184);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(250, 258);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 15;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.picbox2_Click);
+            // 
             // TeamUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +232,7 @@
             this.Controls.Add(this.lblHeadline);
             this.Controls.Add(this.picbox5);
             this.Controls.Add(this.picbox1);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.picbox2);
             this.Controls.Add(this.picbox3);
             this.Controls.Add(this.picbox4);
@@ -232,6 +249,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picbox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFBLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +270,6 @@
         private Guna.UI2.WinForms.Guna2Panel panelMemberDesc;
         private Guna.UI2.WinForms.Guna2PictureBox picFBLogo;
         private System.Windows.Forms.LinkLabel linkFacebook;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

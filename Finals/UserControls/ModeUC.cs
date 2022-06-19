@@ -42,7 +42,7 @@ namespace Finals.UserControls
         public static string RegisteredUsername;
         public static bool ADMIN;
         string RecoverEmail;
-        string RegisteredEmail;
+        public static string RegisteredEmail;
         string RegisteredPassword;
         string OTP;
 
