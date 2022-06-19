@@ -61,9 +61,9 @@
             this.ProfilePicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.txtBio = new System.Windows.Forms.TextBox();
             this.lblBio = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.txtBio = new System.Windows.Forms.TextBox();
             this.UserProfilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicture)).BeginInit();
             this.SuspendLayout();
@@ -508,6 +508,15 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // txtBio
+            // 
+            this.txtBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBio.Location = new System.Drawing.Point(243, 89);
+            this.txtBio.Multiline = true;
+            this.txtBio.Name = "txtBio";
+            this.txtBio.Size = new System.Drawing.Size(407, 135);
+            this.txtBio.TabIndex = 38;
+            // 
             // lblBio
             // 
             this.lblBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -523,15 +532,6 @@
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // txtBio
-            // 
-            this.txtBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBio.Location = new System.Drawing.Point(243, 89);
-            this.txtBio.Multiline = true;
-            this.txtBio.Name = "txtBio";
-            this.txtBio.Size = new System.Drawing.Size(407, 135);
-            this.txtBio.TabIndex = 38;
             // 
             // DashboardHome
             // 

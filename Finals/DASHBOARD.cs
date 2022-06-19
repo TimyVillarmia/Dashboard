@@ -15,20 +15,29 @@ namespace Finals
         public DASHBOARD()
         {
             InitializeComponent();
+
         }
 
-        private void DASHBOARD_Load(object sender, EventArgs e)
+    
+        public void DASHBOARD_Load(object sender, EventArgs e)
         {
+
             btnDashboard.FillColor = Color.FromArgb(255, 110, 108);
             btnDashboard.ForeColor = Color.White;
 
-
-            UserControls.DashboardHome dashboardhome = new UserControls.DashboardHome();
-            MainPanel.Controls.Add(dashboardhome);
-            dashboardhome.BringToFront();
+            if (!MainPanel.Controls.Contains(UserControls.DashboardHome.Instance))
+            {
+                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+                MainPanel.Controls.Add(dashhome);
+            }
+            else
+            {
+                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+                MainPanel.Controls.Add(dashhome);
+            }
         }
 
-  
+
         public void btnDashboard_Click(object sender, EventArgs e)
         {
             btnDashboard.FillColor = Color.FromArgb(255, 110, 108);
@@ -42,9 +51,21 @@ namespace Finals
             btnPictureBox.FillColor = Color.Transparent;
             btnPictureBox.ForeColor = Color.FromArgb(32, 22, 16);
 
-            UserControls.DashboardHome dashboardhome = new UserControls.DashboardHome();
-            MainPanel.Controls.Add(dashboardhome);
-            dashboardhome.BringToFront();
+
+            if (!MainPanel.Controls.Contains(UserControls.DashboardHome.Instance))
+            {
+                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+                MainPanel.Controls.Add(dashhome);
+            }
+            else
+            {
+                UserControls.DashboardHome dashhome = new UserControls.DashboardHome();
+                MainPanel.Controls.Add(dashhome);
+            }
+
+
+
+
         }
 
         public void btnGroupProfile_Click_2(object sender, EventArgs e)
@@ -123,10 +144,10 @@ namespace Finals
 
         private void linkLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
+            Hide();
             MainForm mainForm = new MainForm();
             mainForm.ShowDialog();
-            this.Close();
+            Close();
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)

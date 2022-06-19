@@ -12,14 +12,26 @@ namespace Finals.UserControls
 {
     public partial class DashboardHome : UserControl
     {
+        private static DashboardHome _instance;
+        public static DashboardHome Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new DashboardHome();
+                return _instance;
+            }
+        }
         public DashboardHome()
         {
             InitializeComponent();
         }
 
+
+
         private void DashboardHome_Load(object sender, EventArgs e)
         {
-
+        
             txtCourse.Visible = false;
             txtSection.Visible = false;
             txtAge.Visible = false;
@@ -34,6 +46,7 @@ namespace Finals.UserControls
                 lblUsername.Text = "Admin";
                 btnEdit.Visible = false;
                 btnSave.Visible = false;
+
             }
             else
             {
@@ -51,6 +64,11 @@ namespace Finals.UserControls
                 lblPhone.Text = string.Empty;
 
             }
+
+
+
+
+
         }
 
         private void ProfilePicture_Click(object sender, EventArgs e)

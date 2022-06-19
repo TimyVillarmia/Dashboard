@@ -104,7 +104,9 @@ namespace Finals.UserControls
                     DASHBOARD dashboard = new DASHBOARD();
                     dashboard.ShowDialog();
                     ParentForm.Close();
-       
+
+             
+
                 }
                 else if (txtUsername.Text == RegisteredUsername && txtPassword.Text == RegisteredPassword)
                 {
