@@ -315,7 +315,7 @@ namespace Finals.UserControls
                     client.Connect("smtp.gmail.com", 465, true); //Gmail's smtp server, PORT: 465
                     client.Authenticate(senderEmail, senderPass); //Login sender's email and password
                     client.Send(message); //
-                    MessageBox.Show("Kindly check your entered email address and Don't forget to check your SPAM folders");
+                    MessageBox.Show("Kindly check your email and don't forget to check your SPAM folders");
                 }
                 catch (Exception ex)
                 {

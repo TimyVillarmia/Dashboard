@@ -94,6 +94,7 @@ namespace Finals.UserControls
             ComboGender.Visible = true;
             dateBirthdate.Visible = true;
             txtPhone.Visible = true;
+            txtBio.Visible = true;
 
 
         }
@@ -109,13 +110,17 @@ namespace Finals.UserControls
             ComboGender.Visible = false;
             dateBirthdate.Visible = false;
             txtPhone.Visible = false;
+            txtBio.Visible = false;
 
             lblCourse.Text = txtCourse.Text;
             lblSection.Text = txtSection.Text;
             lblAge.Text = txtAge.Text;
-            lblGender.Text = ComboGender.SelectedIndex.ToString();
+            lblGender.Text = ComboGender.Text;
             lblBirthday.Text = dateBirthdate.Text;
             lblPhone.Text = txtPhone.Text;
+            lblBio.TextAlign = ContentAlignment.TopLeft;
+            lblBio.Text = txtBio.Text;
+
 
 
         }
