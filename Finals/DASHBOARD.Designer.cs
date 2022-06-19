@@ -205,7 +205,7 @@
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(233, 67);
             this.btnDashboard.TabIndex = 17;
-            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Text = "Account";
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // TopPanel

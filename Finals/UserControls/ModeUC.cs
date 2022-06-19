@@ -155,10 +155,20 @@ namespace Finals.UserControls
                     RegisteredUsername = txtRegisterUsername.Text;
                     RegisteredPassword = txtRegisterPassword.Text;
 
-                    checkboxTerms.Checked = false;
                     ForgotPassPanel.Visible = false;
                     SignInPanel.Visible = true;
                     SignUpPanel.Visible = false;
+
+                    txtRegisterEmail.Text = string.Empty;
+                    txtRegisterUsername.Text = string.Empty;
+                    txtRegisterPassword.Text = string.Empty;
+                    txtConfirmPass.Text = string.Empty;
+                    checkboxTerms.Checked = false;
+
+                    txtRegisterEmail.BorderColor = Color.FromArgb(0, 0, 0);
+                    txtRegisterUsername.BorderColor = Color.FromArgb(0, 0, 0);
+                    txtRegisterPassword.BorderColor = Color.FromArgb(0, 0, 0);
+                    txtConfirmPass.BorderColor = Color.FromArgb(0, 0, 0);
 
 
                     ModeUC.Instance.SendToBack();
@@ -367,12 +377,18 @@ namespace Finals.UserControls
                             SignInPanel.Visible = true;
                             SignUpPanel.Visible = false;
 
-                            txtNewPass.Text = "";
-                            txtOTP.Text = "";
-                            txtNewPass.Text = "";
-                            txtConfirmNewPass.Text = "";
+                            txtRecoverEmail.Text = string.Empty;
+                            txtOTP.Text = string.Empty;
+                            txtNewPass.Text = string.Empty;
+                            txtConfirmNewPass.Text = string.Empty;
 
-                        }     
+                            txtRecoverEmail.BorderColor = Color.FromArgb(0, 0, 0);
+                            txtOTP.BorderColor = Color.FromArgb(0, 0, 0);
+                            txtNewPass.BorderColor = Color.FromArgb(0, 0, 0);
+                            txtConfirmNewPass.BorderColor = Color.FromArgb(0, 0, 0);
+
+
+                        }
                         else
                         {
                             MessageBox.Show("Make sure your password is at least 8 characters");

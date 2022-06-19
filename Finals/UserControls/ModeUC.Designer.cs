@@ -357,7 +357,7 @@
             this.txtConfirmPass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.PasswordChar = '•';
-            this.txtConfirmPass.PlaceholderText = "Create Password";
+            this.txtConfirmPass.PlaceholderText = "Confirm Password";
             this.txtConfirmPass.SelectedText = "";
             this.txtConfirmPass.Size = new System.Drawing.Size(343, 49);
             this.txtConfirmPass.TabIndex = 9;
