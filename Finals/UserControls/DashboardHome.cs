@@ -97,8 +97,9 @@ namespace Finals.UserControls
             txtBio.Visible = true;
 
 
-        }
 
+        }
+ 
         private void btnSave_Click(object sender, EventArgs e)
         {
             btnEdit.Visible = true;

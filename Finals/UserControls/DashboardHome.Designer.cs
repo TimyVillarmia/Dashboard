@@ -32,7 +32,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblHello = new System.Windows.Forms.Label();
             this.UserProfilePanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtBio = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCourse = new Guna.UI2.WinForms.Guna2TextBox();
             this.dateBirthdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,12 +57,13 @@
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.lblBio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ProfilePicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.lblBio = new System.Windows.Forms.Label();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.txtBio = new System.Windows.Forms.TextBox();
             this.UserProfilePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePicture)).BeginInit();
             this.SuspendLayout();
@@ -123,35 +123,13 @@
             this.UserProfilePanel.Controls.Add(this.ProfilePicture);
             this.UserProfilePanel.Controls.Add(this.btnEdit);
             this.UserProfilePanel.Controls.Add(this.btnSave);
-            this.UserProfilePanel.Controls.Add(this.lblBio);
             this.UserProfilePanel.Controls.Add(this.txtBio);
+            this.UserProfilePanel.Controls.Add(this.lblBio);
             this.UserProfilePanel.FillColor = System.Drawing.Color.White;
             this.UserProfilePanel.Location = new System.Drawing.Point(11, 133);
             this.UserProfilePanel.Name = "UserProfilePanel";
             this.UserProfilePanel.Size = new System.Drawing.Size(727, 519);
             this.UserProfilePanel.TabIndex = 4;
-            // 
-            // txtBio
-            // 
-            this.txtBio.BorderColor = System.Drawing.Color.Black;
-            this.txtBio.BorderRadius = 1;
-            this.txtBio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBio.DefaultText = "";
-            this.txtBio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBio.Location = new System.Drawing.Point(243, 89);
-            this.txtBio.Name = "txtBio";
-            this.txtBio.PasswordChar = '\0';
-            this.txtBio.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtBio.PlaceholderText = "";
-            this.txtBio.SelectedText = "";
-            this.txtBio.Size = new System.Drawing.Size(407, 135);
-            this.txtBio.TabIndex = 37;
             // 
             // txtCourse
             // 
@@ -163,6 +141,7 @@
             this.txtCourse.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCourse.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCourse.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCourse.ForeColor = System.Drawing.Color.Black;
             this.txtCourse.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCourse.Location = new System.Drawing.Point(146, 249);
             this.txtCourse.Name = "txtCourse";
@@ -196,6 +175,7 @@
             this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhone.ForeColor = System.Drawing.Color.Black;
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Location = new System.Drawing.Point(555, 404);
             this.txtPhone.MaxLength = 11;
@@ -216,6 +196,7 @@
             this.txtAge.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAge.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAge.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAge.ForeColor = System.Drawing.Color.Black;
             this.txtAge.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAge.Location = new System.Drawing.Point(462, 255);
             this.txtAge.Name = "txtAge";
@@ -235,6 +216,7 @@
             this.txtSection.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSection.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSection.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSection.ForeColor = System.Drawing.Color.Black;
             this.txtSection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSection.Location = new System.Drawing.Point(146, 309);
             this.txtSection.Name = "txtSection";
@@ -464,16 +446,6 @@
             this.guna2Separator1.Size = new System.Drawing.Size(407, 10);
             this.guna2Separator1.TabIndex = 6;
             // 
-            // lblBio
-            // 
-            this.lblBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBio.Location = new System.Drawing.Point(243, 89);
-            this.lblBio.Name = "lblBio";
-            this.lblBio.Size = new System.Drawing.Size(407, 135);
-            this.lblBio.TabIndex = 4;
-            this.lblBio.Text = "Biography";
-            this.lblBio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -500,24 +472,6 @@
             this.ProfilePicture.Click += new System.EventHandler(this.ProfilePicture_Click);
             this.ProfilePicture.MouseHover += new System.EventHandler(this.ProfilePicture_MouseHover);
             // 
-            // btnSave
-            // 
-            this.btnSave.BorderRadius = 8;
-            this.btnSave.BorderThickness = 1;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.White;
-            this.btnSave.Font = new System.Drawing.Font("Roboto Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(624, 472);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(72, 32);
-            this.btnSave.TabIndex = 36;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // btnEdit
             // 
             this.btnEdit.BorderRadius = 8;
@@ -536,11 +490,48 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // btnSave
+            // 
+            this.btnSave.BorderRadius = 8;
+            this.btnSave.BorderThickness = 1;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.FillColor = System.Drawing.Color.White;
+            this.btnSave.Font = new System.Drawing.Font("Roboto Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(624, 472);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(72, 32);
+            this.btnSave.TabIndex = 36;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // lblBio
+            // 
+            this.lblBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBio.Location = new System.Drawing.Point(243, 89);
+            this.lblBio.Name = "lblBio";
+            this.lblBio.Size = new System.Drawing.Size(407, 135);
+            this.lblBio.TabIndex = 4;
+            this.lblBio.Text = "Biography";
+            this.lblBio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // txtBio
+            // 
+            this.txtBio.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBio.Location = new System.Drawing.Point(243, 89);
+            this.txtBio.Multiline = true;
+            this.txtBio.Name = "txtBio";
+            this.txtBio.Size = new System.Drawing.Size(407, 135);
+            this.txtBio.TabIndex = 38;
             // 
             // DashboardHome
             // 
@@ -597,6 +588,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox ComboGender;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateBirthdate;
         private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2TextBox txtBio;
+        private System.Windows.Forms.TextBox txtBio;
     }
 }

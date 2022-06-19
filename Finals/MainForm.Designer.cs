@@ -236,7 +236,7 @@
         private Guna.UI2.WinForms.Guna2TextBox lblLogoname;
         private Guna.UI2.WinForms.Guna2Elipse BorderlessForm;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Panel MainPanel;
+
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
         private Guna.UI2.WinForms.Guna2Panel HomePanel;
     }
