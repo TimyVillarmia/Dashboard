@@ -12,16 +12,7 @@ namespace Finals.UserControls
 {
     public partial class DashboardHome : UserControl
     {
-        private static DashboardHome _instance;
-        public static DashboardHome Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new DashboardHome();
-                return _instance;
-            }
-        }
+   
         public DashboardHome()
         {
             InitializeComponent();
