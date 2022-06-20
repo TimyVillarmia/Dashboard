@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finals", "Finals\Finals.csproj", "{1DBCE629-430D-40CC-9F70-95EDBE095547}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS201Dashboard", "Finals\CS201Dashboard.csproj", "{1DBCE629-430D-40CC-9F70-95EDBE095547}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
