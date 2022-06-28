@@ -304,8 +304,8 @@ namespace Finals.UserControls
                 string msg = OTP;
                 string senderEmail, senderPass, receiverEmail;
                 receiverEmail = txtRecoverEmail.Text;
-                senderEmail = "timy.villarmiaact2022@gmail.com";
-                senderPass = "phnvprgowvivrndk";  //Gmail's App Password
+                senderEmail = "Change this to your sender's email ";
+                senderPass = "Change this to your Gmail's App Password";  //Gmail's App Password
 
 
                 MimeMessage message = new MimeMessage(); // Creating object for Message
